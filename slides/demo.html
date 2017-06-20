@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/reveal.css">
+    <link rel="stylesheet" href="./styles/white.css">
+    <!--<link rel="stylesheet" href="./styles/custom.css">-->
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+    <!--table generator http://www.tablesgenerator.com/html_tables-->
+    <!--LaTex generator http://www.wiris.com/editor/demo/en/mathml-latex-->
+    <!--reveal.js stuff https://github.com/hakimel/reveal.js/#fragments-->
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section>
+                    <h2>The Standard Deviation</h2>
+                    <p>Another measure of variation, the standard deviation describes the mean distance between the data values
+                        and the mean of the dataset.</p>
+                </section>
+                <section>
+                    <h2>Key Facts about the Standard Deviation</h2>
+                    <ul>
+                        <li>The standard deviation is always non-negative. (\(s\geq 0\)) </li>
+                        <li>The <span class="fragment highlight-red"> larger </span> the standard deviation, the <span class="fragment highlight-red"> more variation </span> is in the data.</li>
+                        <li>If the standard deviation is equal to zero, there is no variation in the data.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Standard deviation formula</h3>
+                    \[s=\sqrt{\frac{\Sigma(x-\bar{x})^2}{n-1}}\]
+
+                    <p>Remember, \(\bar{x}\) is the sample mean and \(n\) is the sample size. </p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>An Example:</h3> We will calculate the standard deviation of a small dataset to understand how the formula
+                    works. </section>
+                <section> Consider the dataset below.
+                    <hr/> \(\begin{array}{ccccccc} 1&2&3&3&4&6&9 \end{array}\)
+                    <hr/>
+                    <p class="fragment fade-in"> What is the mean of this data? </p>
+                    <p class="fragment fade-in"> \[\bar{x}=4\] </p>
+                    <p class="fragment fade-in"> Next, we will find the difference between each data value and the mean.</p>
+                </section>
+
+                <section>
+                    <!--TODO table styling-->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>\(x\)</th>
+                                <th>\(x-\bar{x}\)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>\(1\)</td>
+                                <td>\((1-4)=-3\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(2\)</td>
+                                <td>\((2-4)=-2\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(3\)</td>
+                                <td>\((3-4)=-1\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(3\)</td>
+                                <td>\((3-4)=-1\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(4\)</td>
+                                <td>\((4-4)=0\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(6\)</td>
+                                <td>\((6-4)=2\)</td>
+                            </tr>
+                            <tr>
+                                <td>\(9\)</td>
+                                <td>\((9-4)=5\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="fragment fade-in"> NEXT </p>
+                </section>
+
+                <section>
+                    <table>
+                        <tr>
+                            <th>\[x\]</th>
+                            <th>\[x-\bar{x}\]</th>
+                            <th>\[(x-\bar{x})^2\]</th>
+                        </tr>
+                        <tr>
+                            <td>\(1\)</td>
+                            <td>\(1-4=-3\)</td>
+                            <td>\((-3)^2=9\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(2\)</td>
+                            <td>\(2-4=-2\)</td>
+                            <td>\((-2)^2=4\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(3\)</td>
+                            <td>\(3-4=-1\) </td>
+                            <td>\((-1)^2=1\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(3\)</td>
+                            <td>\(3-4=-1\)</td>
+                            <td>\((-1)^2=1\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(4\)</td>
+                            <td>\(4-4=0\)</td>
+                            <td>\((0)^2=0\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(6\)</td>
+                            <td>\(6-4=2\)</td>
+                            <td>\((2)^2=4\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(9\)</td>
+                            <td>\(9-4=5\)</td>
+                            <td>\((5)^2=25\)</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    Sum (or add together) the resulting squares. \[9+4+1+1+0+4+25=44 \]
+                    <p class="fragment fade-in"> Divide the sum. </p>
+                    <p class="fragment fade-in"> \[ \frac{44}{7-1} = \frac{44}{7}=7.333 \] </p>
+                    <p class="fragment fade-in"> Finally, take the square root. </p>
+                    <p class="fragment fade-in"> \[ \sqrt{7.333} \approx 2.71\] </p>
+                </section>
+
+            </section>
+        </div>
+    </div>
+    <script src="./js/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+    </script>
+</body>
+
+</html>
