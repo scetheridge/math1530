@@ -13,7 +13,7 @@ app.controller("myCtrl", function ($scope) {
             "links": [
               {
                 "text": "Statistics Thing 1",
-                "url": "http://http://google.com",
+                "url": "http://google.com",
                 "icon": "fa-bath "
               },
               {
