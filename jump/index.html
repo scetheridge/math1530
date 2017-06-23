@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Math 1530 Jump Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div ng-app="jumpPage" ng-controller="myCtrl">
+  <div class="jumbotron my-nav">
+    <h1 class="animated rotateInDownLeft">{{jumppage.pageTitle}}</h1>
+    <p class="subtitle animated rotateInUpLeft "><i class="fa fa-book"></i>Read, <i class="fa fa-play"></i>Watch, <i class="fa fa-hand-o-right"></i>Try<i class="fa fa-exchange"></i>Do</p><br>
+    <ul class="animated lightSpeedIn">
+      <li ng-repeat="unit in jumppage.units"><a ng-href="{{'#'+unit.title}}">{{unit.title}}</a></li>
+    </ul>
+  </div>
+  <div class="container animated fadeIn ">
+    <div ng-attr-id="{{unit.title}}" ng-repeat="unit in jumppage.units">
+      <h2 class="animated bounceInLeft"><a href="#top" title="go to top">{{unit.title}}</a></h2>
+      <section ng-repeat="section in unit.sections">
+
+        <h3 class="animated bounceInRight"> <a href="#top" title="go to top">{{section.title}}</a></h3>
+        <div class="row text-center">
+          <div ng-repeat="link in section.links" class="col-sm-2">
+            <a ng-href="{{link.url}}" target="_blank">
+              <div class="box " tabindex="0">
+
+                <i ng-class="link.icon" class="fa fa-5x animated rubberBand"></i>
+                <p>{{link.text}}</p>
+              </div>
+            </a>
+            <p ng-if="link.desc" class="desc">{{link.desc}}</p>
+          </div>
+        </div>
+        <hr>
+      </section>
+    </div>
+  </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
