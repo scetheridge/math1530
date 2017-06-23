@@ -32,7 +32,7 @@ app.controller("myCtrl", function ($scope) {
                 "icon": "fa-wpexplorer"
               },
               {
-                "text": "Statistics Thing 2",
+                "text": "Standard Deviation",
                 "url": "http://yahoo.com",
                 "desc":
                 "Some information and stuff 2 for link 2 in unit 1 and section 2",
