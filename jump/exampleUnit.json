@@ -1,0 +1,22 @@
+{
+  "pageTitle": "Math 1530 Jump Page",
+  "units": [
+    {
+      "title": "Unit 1",
+      "sections": [
+        {
+          "title": "Section 1.1",
+          "links": [
+            {
+              "text": "Statistics Thing 1", //required
+              "url": "http://yahoo.com", //required
+              "desc":
+              "Some information and link 1 in unit 1 and section 1",  //optional description text
+              "icon": "fa-telegram" // required
+            } // end of link object - add a comma to add another link
+          ] // end of links array
+        } // end of section object - add a comma to add another section
+      ] // end of sections array
+    } // end of unit object - add a comma to add another unit
+  ] // end of units array
+} // end of JSON object
