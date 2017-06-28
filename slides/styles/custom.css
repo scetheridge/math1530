@@ -1,19 +1,6 @@
-/*table {
-    border-collapse: collapse;
-}
+.reveal table th,
+.reveal table td {
+  border: 1px solid; }
 
-table, th, td {
-    border: 10 solid black!important;
-}
-
-.reveal table th, .reveal table td {
-    text-align: left;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-bottom: 1px solid;
-}
-
-.reveal table {
-    margin: auto;
-    border-collapse: collapse;
-    border-spacing: 0;
-}*/
+  .reveal table tr:last-child td {
+  border-bottom: 1px solid; }
