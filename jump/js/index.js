@@ -64,7 +64,7 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Stratified Demonstration", //required button text 
+                  "text": "Sampling Demonstration", //required button text 
                   "url": "http://onlinestatbook.com/2/introduction/sampling_demo.html", //required
                   "type": type[2], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[3], // required - refers to array above - first value is media[0] - no quotes
