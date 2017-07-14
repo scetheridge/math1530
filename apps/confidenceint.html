@@ -30,10 +30,14 @@
                     <input v-model.number="phat" type="number" step="1" class="form-control" id="phat">
                     <label class="control-label" for="nprop"> \(n\): </label>
                     <input v-model.number="nprop" type="number" step=".01" class="form-control" id="nprop">
+                    <label class="control-label" for="clevelp"> Confidence level: </label>
+                    <input v-model.number="clevelp" type="number" step=".01" class="form-control" id="clevelp">
                 </div>
 
                 <p>Margin of error: </p> <p> \[E = z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\] </p>
-                <p> \[= {{tcv}}\] </p>
+<!--TODO figure out how to calculate the margin of error from js computed values-->
+
+                <p> {{invnorm}} </p>
 
 
             </div>
@@ -45,23 +49,29 @@
 
                     <label class="control-label" for="sd"> \(s\): </label>
                     <input v-model.number="sd" type="number" step=".01" class="form-control" id="sd">
+
+                    <label class="control-label" for="nmean"> \(n\): </label>
+                    <input v-model.number="nmean" type="number" step=".01" class="form-control" id="nmean">
                 </div>
 
                 <p>Margin of error: </p>
                 <p> \[E= t_{\alpha/2} \cdot \frac{s}{\sqrt{n}}\] </p>
+                <p> \[=  \] </p>
 
             </div>
 
-             <div class="col">
+             <!--<div class="col">
                 <h2>Standard Deviation</h2>
                 <div class="form-group">
-                    <label class="control-label" for="df"> Enter the degrees of freedom: </label>
-                    <input v-model.number="df" type="number" step="1" class="form-control" id="df">
-                    <label class="control-label" for="area"> Enter the area: </label>
-                    <input v-model.number="area" type="number" step=".01" class="form-control" id="area">
+                    <label class="control-label" for="stddev"> \(s\): </label>
+                    <input v-model.number="stddev" type="number" step="1" class="form-control" id="stddev">
+
+                    <label class="control-label" for="nsd"> \(n\): </label>
+                    <input v-model.number="nsd" type="number" step=".01" class="form-control" id="nsd">
                 </div>
 
-                <p> The critical value is: {{tcv}} </p>
+                <p> Margin of error: </p>
+                <p> \[E =   \] </p>-->
 
 
             </div>
@@ -79,14 +89,15 @@
             el: "#app",
             data: {
                 title: "Confidence Intervals",
-                df: 29,
-                area: 0.05,
+                phat: 0.5,
+                nprop: 100,
+                clevelp: 0.95,
                 df2: 28,
                 area2: 0.025
             },
             computed: {
-                tcv: function () {
-                    return jStat.studentt.inv(this.area, this.df)
+                invnorm: function () {
+                    return jStat.normal.inv(this.clevelp,0,1)
                 },
                 tcv2: function () {
                     return jStat.studentt.inv(this.area2, this.df2)
