@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Confidence Intervals</title>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+    <script src="http://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+
+        <h1>{{title}}</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h2>Proportion</h2>
+                <div class="form-group">
+                    <label class="control-label" for="phat"> \(\hat{p}\): </label>
+                    <input v-model.number="phat" type="number" step="1" class="form-control" id="phat">
+                    <label class="control-label" for="nprop"> \(n\): </label>
+                    <input v-model.number="nprop" type="number" step=".01" class="form-control" id="nprop">
+                </div>
+
+                <p>Margin of error: </p> <p> \[E = z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\] </p>
+                <p> \[= {{tcv}}\] </p>
+
+
+            </div>
+            <div class="col">
+                <h2>Mean</h2>
+                <div class="form-group">
+                    <label class="control-label" for="xbar"> \(\bar{x}\): </label>
+                    <input v-model.number="xbar" type="number" step="1" class="form-control" id="xbar">
+
+                    <label class="control-label" for="sd"> \(s\): </label>
+                    <input v-model.number="sd" type="number" step=".01" class="form-control" id="sd">
+                </div>
+
+                <p>Margin of error: </p>
+                <p> \[E= t_{\alpha/2} \cdot \frac{s}{\sqrt{n}}\] </p>
+
+            </div>
+
+             <div class="col">
+                <h2>Standard Deviation</h2>
+                <div class="form-group">
+                    <label class="control-label" for="df"> Enter the degrees of freedom: </label>
+                    <input v-model.number="df" type="number" step="1" class="form-control" id="df">
+                    <label class="control-label" for="area"> Enter the area: </label>
+                    <input v-model.number="area" type="number" step=".01" class="form-control" id="area">
+                </div>
+
+                <p> The critical value is: {{tcv}} </p>
+
+
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script>
+        // APP Start
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Confidence Intervals",
+                df: 29,
+                area: 0.05,
+                df2: 28,
+                area2: 0.025
+            },
+            computed: {
+                tcv: function () {
+                    return jStat.studentt.inv(this.area, this.df)
+                },
+                tcv2: function () {
+                    return jStat.studentt.inv(this.area2, this.df2)
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
