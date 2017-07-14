@@ -87,7 +87,282 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['sampling', 'activity']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
-            }// end of an objective - add a comma here to add another objective
+            },// end of an objective - add a comma here to add another objective
+            {
+              "title": "1.1d Types of Studies", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.1e Bias and Distortion in Statistics", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "1.2 Summarizing and Graphing Data", //required topic title
+          "objectives": [
+            {
+              "title": "1.2a Construct a Frequency Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.2b Graph a Frequency Distribution as a Histogram", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.2c Construct a Dotplot", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.2d Construct a Stem-and-leaf Plot", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "1.3 Measures of Center", //required topic title
+          "objectives": [
+            {
+              "title": "1.3a Find the Mean of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.3b Find the Median of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.3c Find the Mode of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.3d Find the Midrange of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.3e Estimate the Mean of a Frequency Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "1.4 Measures of Variation", //required topic title
+          "objectives": [
+            {
+              "title": "1.4a Find the Range of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.4b Find the Variance and Standard Deviation of a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.4c Estimate the Standard Deviation of a Frequency Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "1.5 Measures of Relative Standing", //required topic title
+          "objectives": [
+            {
+              "title": "1.5a Find a Specific Percentile for a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.5b Find the Five Number Summary for a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "1.5c Construct a Boxplot and Modified Boxplot for a Dataset", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
           ] // end of objectives array
         } // end of topic object - add a comma here to add another topic
       ] // end of topics array
@@ -96,10 +371,240 @@ app.controller("myCtrl", function ($scope) {
       "title": "Discrete Probability Distributions", //required unit title
       "topics": [
         {
-          "title": "2.1 Topic something", //required topic title
+          "title": "2.1 Fundamentals of Probability", //required topic title
           "objectives": [
             {
-              "title": "2.1a Objective of Something", //optional objective title
+              "title": "2.1a Understand Properties of Probabilities", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.1b Solve Basic Probability Problems", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.1c Use Probability Rules for Complementary Events", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "2.2 The Addition Rule", //required topic title
+          "objectives": [
+            {
+              "title": "2.2a Identify Sets of Disjoint Events", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.2b Apply the Addition Rule", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.2c Apply the Addition Rule to a Contingency Table", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "2.3 Conditional Probability and the Multiplication Rule", //required topic title
+          "objectives": [
+            {
+              "title": "2.3a Apply the Multiplication Rule to Independent Events", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.3b Apply the Multiplication Rule to Dependent Events", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.3c Apply the Multiplication Rule to a Contingency Table", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "2.4 Random Variables and Discrete Probability Distributions", //required topic title
+          "objectives": [
+            {
+              "title": "2.4a Identify Discrete Probability Distributions and Their Random Variables", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.4b Find Probabilities Using a Discrete Probability Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.4c Determine the Mean, Variance, and Standard Deviation of a Discrete Probability Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "2.5 Binomial Probability Distributions", //required topic title
+          "objectives": [
+            {
+              "title": "2.5a Identify Binomial Probability Distributions and Their Random Variables", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.5b Find Probabilities Using a Binomial Probability Distribution", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "2.5c Determine the Mean, Variance, and Standard Deviation of a Binomial Probability Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -118,7 +623,7 @@ app.controller("myCtrl", function ($scope) {
       ] // end of topics array
     }, // end of unit object - add a comma to add another unit // end of unit object - add a comma to add another unit
      {
-      "title": "Normal Probability Distributions and Estimation", //required unit title
+      "title": "Normal Probability Distributions", //required unit title
       "topics": [
         {
           "title": "3.1 Introduction to Continuous Distributions", //required topic title
@@ -521,6 +1026,331 @@ app.controller("myCtrl", function ($scope) {
             }, // end of an objective - add a comma here to add anohter objective
             {
               "title": "3.4b Calculate Minimum Sample Size for Mean", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        } // end of topic object - add a comma here to add another topic
+      ] // end of topics array
+    }, // end of unit object - add a comma to add another unit // end of unit object - add a comma to add another unit
+    {
+      "title": "Hypothesis Testing and Inference", //required unit title
+      "topics": [
+        {
+          "title": "4.1 Hypothesis Tests: Introduction", //required topic title
+          "objectives": [
+            {
+              "title": "4.1a Identify the Steps in a P-value Hypothesis Test", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.1b Translate Text Claim into Null and Alternative Hypotheses", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "4.2 Hypothesis Tests: Proportions", //required topic title
+          "objectives": [
+            {
+              "title": "4.2a Calculate Test Statistic to Test a Claim About a Proportion", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.2b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.2c Formulate Conclusion About the Original Claim", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.2d Explore Use of Confidence Intervals to Test a Claim", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+                {
+          "title": "4.3 Hypothesis Tests: Means", //required topic title
+          "objectives": [
+            {
+              "title": "4.3a Calculate Test Statistic to Test a Claim About a Mean", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.3b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.3c Formulate Conclusion About the Original Claim", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+                {
+          "title": "4.4 Hypothesis Tests: Standard Deviations", //required topic title
+          "objectives": [
+            {
+              "title": "4.4a Calculate Test Statistic to Test a Claim About a Standard Deviation", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.4b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.4c Formulate Conclusion About the Original Claim", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "4.5 Linear Correlation and Regression", //required topic title
+          "objectives": [
+            {
+              "title": "4.5a Construct a Scatterplot for a Dataset of Ordered Pairs", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.5b Evaluate Whether a Significant Linear Correlation Exists in a Set of Ordered Pairs", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.5c Find the Linear Regression Equation for a Set of Ordered Pairs", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.5d Determine When to Use the Linear Regression for Predictions", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+                {
+          "title": "4.6 Goodness of Fit", //required topic title
+          "objectives": [
+            {
+              "title": "4.6a Test the Goodness of Fit for a Multinomial Distribution with Equal Expected Values", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array            
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "4.6b Test the Goodness of Fit for a Multinomial Distribution with Unequal Expected Values", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array            
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "4.7 Test for Independence", //required topic title
+          "objectives": [
+            {
+              "title": "4.7a Test a Hypothesis About Independence of Variables in Contingency Tables", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
