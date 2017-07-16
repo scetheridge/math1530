@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Normal Probability</title>
+  <script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="app-prob" class="container">
+
+  <h1>{{title}}</h1>
+<hr>
+  <div class="row">
+    <div class="col">
+      <h2>One Sided</h2>
+      <div class="form-group">
+        <label class="control-label" for="znot"> Enter the z-score below: </label>
+        <input v-model.number="znot" type="number" step=".01" class="form-control" id="znot">
+      </div>
+
+<!-- <p>Z<sub>0</sub> is {{znot}}</p> -->
+      <p> P(z &lt; {{znot}} ) = {{dist.cdf(znot)}} </p>
+      <p> P(z &gt; {{znot}} ) = {{1-dist.cdf(znot)}} </p>
+      
+<!-- {{dist.ppf(0.90)}} <p>prob 2 {{prob}}</p> -->
+    <button v-on:click="updategraph1()">Update Graph</button>
+    </div>
+    <div class="col">
+      <h2>Two Sided</h2>
+ <div class="form-group">
+        <label class="control-label" for="zleft"> Enter the left z-score below: </label>
+        <input v-model.number="zleft" type="number" step=".01" class="form-control" id="zleft">
+   
+   <label class="control-label" for="zright"> Enter the right z-score below: </label>
+        <input v-model.number="zright" type="number" step=".01" class="form-control" id="zright">
+      </div>
+      <p>P({{zleft}} &lt; z &lt; {{zright}}) = {{dist.cdf(zright)-dist.cdf(zleft)}} </p>
+      <p>P(z &lt; {{zleft}} and z &gt; {{zright}}) = {{dist.cdf(zleft) + 1 - dist.cdf(zright)}} </p>
+    <button v-on:click="updategraph2()">Update Graph</button>
+    </div>
+  </div>
+
+<section class="graph">
+<!--   <h2>Graph</h2> -->
+  
+  
+  <div id="bell" class="graph"></div>
+  
+  
+</section>
+
+  <hr>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+    <script src="js/normaldistribution.js"></script>
+
+</body>
+</html>
