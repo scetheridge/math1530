@@ -41,7 +41,7 @@
                 <hr>
 
                 <p>Test Stastic: </p>
-                <p>\[z = \frac{p_0-\hat{p}}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
+                <p>\[z = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
                 <p>z = {{propstat}}</p>
                 <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps" target="_blank"> this calculator</a>. </p>
 
@@ -77,7 +77,7 @@
 
                 <hr>
                 <p>Test Statistic: </p>
-                <p> \[t = \frac{\mu_0-\bar{x}}{s / \! \sqrt{n}}  \] </p>
+                <p> \[t = \frac{\bar{x}-\mu_0}{s / \! \sqrt{n}}  \] </p>
                 <p> t = {{meanstat}} </p>
 
                 <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps/tdistribution.html" target="_blank"> this calculator</a>. </p>
@@ -132,19 +132,19 @@
             },
             computed: {
                 propstat: function () {
-                    var stat = (this.pnot-this.phat) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
+                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
                     return stat
                 },
                 propleft: function () {
-                    var stat = (this.pnot-this.phat) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
+                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
                     return jStat.normal.cdf(stat, 0, 1)
                 },
                 meanstat: function() {
-                    var stat = (this.munot-this.xbar) / (this.sd / Math.sqrt(this.nmean));
+                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
                     return stat
                 },
                 meanleft: function() {
-                    var stat = (this.munot-this.xbar) / (this.sd / Math.sqrt(this.nmean));
+                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
                     return jStat.studentt.cdf(stat, this.nmean-1)
                 }
             }
