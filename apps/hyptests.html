@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Hypothesis Testing</title>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+<!--TODO download jStat and copy here-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+</head>
+
+<body>
+    <div id="app" class="container">
+
+        <h1>{{title}}</h1>
+        <hr>
+        <p>Select the correct parameter and use the spaces below to compute the test statistic and \(P\)-value for a hypothesis test.</p>
+        <div class="row">
+            <div class="col">
+                <h2>Proportion</h2>
+                <div class="form-group">
+                    <label class="control-label" for="pnot"> \(p_0\): </label>
+                    <input v-model.number="pnot" type="number" step="0.01" class="form-control" id="pnot">
+
+                    <label class="control-label" for="phat"> \(\hat{p}\): </label>
+                    <input v-model.number="phat" type="number" step="0.01" class="form-control" id="phat">
+
+                    <label class="control-label" for="nprop"> \(n\): </label>
+                    <input v-model.number="nprop" type="number" step="1" class="form-control" id="nprop">
+                    
+                </div>
+
+                <hr>
+
+                <p>Test Stastic: </p>
+                <p>\[z = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
+                <p>z = {{propstat}}</p>
+                <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps" target="_blank"> this calculator</a>. </p>
+
+                <hr>
+                <p>\(P\)-values:</p>
+                <p>Left-tailed: {{propleft}}</p>
+
+                <p>Right-tailed: {{1-propleft}}</p>
+
+            <!-- TODO: figure out switch statement for two-tailed p-value -->
+                <!-- <p>Two-tailed: {{propleft*2}}</p> -->
+
+
+            </div>
+            <div class="col">
+                <h2>Mean</h2>
+                <div class="form-group">
+                    <label class="control-label" for="munot"> \(\mu_0\): </label>
+                    <input v-model.number="munot" type="number" step="0.1" class="form-control" id="munot">
+
+                    <label class="control-label" for="xbar"> \(\bar{x}\): </label>
+                    <input v-model.number="xbar" type="number" step="0.1" class="form-control" id="xbar">
+
+                    <label class="control-label" for="sd"> \(s\): </label>
+                    <input v-model.number="sd" type="number" step=".01" class="form-control" id="sd">
+
+                    <label class="control-label" for="nmean"> \(n\): </label>
+                    <input v-model.number="nmean" type="number" step="1" class="form-control" id="nmean">
+
+                    <label class="control-label" for="clevelm"> Confidence level: </label>
+                    <input v-model.number="clevelm" type="number" step=".01" class="form-control" id="clevelm">
+                </div>
+
+                <hr>
+                <p>Test Statistic: </p>
+                <p> \[t = \frac{\bar{x}-\mu_0}{s / \! \sqrt{n}}  \] </p>
+                <p> t = {{meanstat}} </p>
+
+                <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps/tdistribution.html" target="_blank"> this calculator</a>. </p>
+
+                <hr>
+                <p>\(P\)-values:</p>
+                <p>Left-tailed: {{meanleft}}</p>
+
+                <p>Right-tailed: {{1-meanleft}}</p>
+
+            <!-- TODO: figure out switch statement for two-tailed p-value -->
+                <!-- <p>Two-tailed: {{propleft*2}}</p> -->
+
+            </div>
+
+             <!-- <div class="col">
+                <h2>Standard Deviation</h2>
+                <div class="form-group">
+                    <label class="control-label" for="stddev"> \(s\): </label>
+                    <input v-model.number="stddev" type="number" step="1" class="form-control" id="stddev">
+
+                    <label class="control-label" for="nsd"> \(n\): </label>
+                    <input v-model.number="nsd" type="number" step=".01" class="form-control" id="nsd">
+                </div>
+
+                <p> Margin of error: </p>
+                <p> \[E =   \] </p>
+
+
+            </div> -->
+        </div>
+
+        <hr>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script>
+        // APP Start
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Hypothesis Testing",
+                pnot: 0.3,
+                phat: 0.5,
+                nprop: 100,
+                munot: 12,
+                xbar: 10,
+                sd: 2,
+                nmean: 100
+            },
+            computed: {
+                propstat: function () {
+                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
+                    return stat
+                },
+                propleft: function () {
+                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
+                    return jStat.normal.cdf(stat, 0, 1)
+                },
+                meanstat: function() {
+                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return stat
+                },
+                meanleft: function() {
+                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return jStat.studentt.cdf(stat, this.nmean-1)
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

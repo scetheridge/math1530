@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>T-distribution</title>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app" class="container">
+
+        <h1>{{title}}</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h2>One Tailed</h2>
+                <div class="form-group">
+                    <label class="control-label" for="df"> Enter the degrees of freedom: </label>
+                    <input v-model.number="df" type="number" step="1" class="form-control" id="df">
+                    <label class="control-label" for="area"> Enter the area: </label>
+                    <input v-model.number="area" type="number" step=".01" class="form-control" id="area">
+                </div>
+
+                <p> The critical value is: {{tcv}} </p>
+
+
+            </div>
+            <div class="col">
+                <h2>Two Tailed</h2>
+                <div class="form-group">
+                    <label class="control-label" for="df2"> Enter the degrees of freedom: </label>
+                    <input v-model.number="df2" type="number" step="1" class="form-control" id="df2">
+
+                    <label class="control-label" for="area2"> Enter the area in one tail: </label>
+                    <input v-model.number="area2" type="number" step=".01" class="form-control" id="area2">
+                </div>
+
+                <p>The critical values are: {{tcv2 + ", " + -1*tcv2}} </p>
+
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script>
+        // APP Start
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Student-t Distribution",
+                df: 29,
+                area: 0.05,
+                df2: 28,
+                area2: 0.025
+            },
+            computed: {
+                tcv: function () {
+                    return jStat.studentt.inv(this.area, this.df)
+                },
+                tcv2: function () {
+                    return jStat.studentt.inv(this.area2, this.df2)
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
