@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>T-distribution</title>
-    <script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <!-- <script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>  -->
+    <script src="https://www.desmos.com/api/v0.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
-    <script src="js/tdistribution.js"></script>
+    <script src="./js/jstat.min.js"></script>
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 </div>
 
                 <p> The critical value is: {{tcv}} </p>
-
+                <button v-on:click="updategraph1()">Update Graph</button>
 
             </div>
             <div class="col">
@@ -42,49 +43,21 @@
                 </div>
 
                 <p>The critical values are: {{tcv2 + ", " + -1*tcv2}} </p>
-
+                <button v-on:click="updategraph2()">Update Graph</button>
             </div>
         </div>
 
         <hr>
         <section class="graph">
-            <!--   <h2>Graph</h2> -->
-
-            <p>Where is this section?</p>
             <div id="bell" class="graph"></div>
-
-
         </section>
 
     </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
-  <script src="js/tdistribution.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 
-    <script>
-        // APP Start
-
-        var app = new Vue({
-            el: "#app",
-            data: {
-                title: "Student-t Distribution",
-                df: 29,
-                area: 0.05,
-                df2: 28,
-                area2: 0.025
-            },
-            computed: {
-                tcv: function () {
-                    return jStat.studentt.inv(this.area, this.df)
-                },
-                tcv2: function () {
-                    return jStat.studentt.inv(this.area2, this.df2)
-                }
-            }
-        });
-    </script>
-
+    <script src="js/tdistribution.js"></script>
 
 </body>
 
