@@ -40,34 +40,20 @@
                     <input v-model.number="nprop" type="number" step="1" class="form-control" id="nprop">
 
                 </div>
-
                 <hr>
-
                 <p>Test Stastic: </p>
                 <p>\[z = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
                 <p>z = {{propstat}}</p>
                 <p>To compute relevant critical values, use <a href="./normalcalc.html" target="_blank"> this calculator</a>.
                 </p>
-
                 <hr>
-                <p>\(P\)-values:</p>
+                <p>P-values:</p>
                 <p>Left-tailed: {{propleft}}</p>
-
                 <p>Right-tailed: {{1-propleft}}</p>
-
-                <!-- TODO: figure out switch statement for two-tailed p-value -->
                 <p v-if="propleft<0.5"> Two-tailed: {{propleft*2}}</p>
-                <p v-else> Two-tailed: {{(1-propleft)/2}}</p>
-
-                <!-- <div v-if="Math.random() > 0.5">
-  Now you see me
-</div>
-<div v-else>
-  Now you don't
-</div> -->
-
-
+                <p v-else> Two-tailed: {{(1-propleft)*2}}</p>
             </div>
+
             <div class="col">
                 <h2>Mean</h2>
                 <div class="form-group">
@@ -96,13 +82,11 @@
                 </p>
 
                 <hr>
-                <p>\(P\)-values:</p>
+                <p>P-values:</p>
                 <p>Left-tailed: {{meanleft}}</p>
-
                 <p>Right-tailed: {{1-meanleft}}</p>
-
-                <!-- TODO: figure out switch statement for two-tailed p-value -->
-                <!-- <p>Two-tailed: {{propleft*2}}</p> -->
+                <p v-if="meanleft<0.5"> Two-tailed: {{meanleft*2}}</p>
+                <p v-else> Two-tailed: {{(1-meanleft)*2}}</p>
 
             </div>
 
