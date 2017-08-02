@@ -92,14 +92,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.1d Types of Studies", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Observational Studies and Experiments", //required button text 
+                  "url": "https://www.youtube.com/watch?v=qwfd8cf3_UY", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "5:48", // optional - completion time
+                  "tags": ['types of studies', 'observational study', 'experimental study', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -107,14 +107,34 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.1e Bias and Distortion in Statistics", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Sources of Bias: How Data Goes Bad", //required button text 
+                  "url": "https://www.youtube.com/watch?v=uDcb-RkbrK8", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "6:59", // optional - completion time
+                  "tags": ['bias', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Selection Bias: A Real World Example", //required button text 
+                  "url": "https://www.youtube.com/watch?v=p52Nep7CBdQ", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:08", // optional - completion time
+                  "tags": ['bias', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Sampling Methods and Bias", //required button text 
+                  "url": "https://www.youtube.com/watch?v=irz_jsv4eVw", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "13:07", // optional - completion time
+                  "tags": ['bias', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -415,16 +435,6 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "2:25", // optional - completion time
                   "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
-                }, // end of link object - add a comma to add another link
-                {
-                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Using Rule of Thumb to Create a 'Usual' Range of Values", //required button text 
-                  "url": "https://youtu.be/5iJg8lfnPEI", //required
-                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "4:53", // optional - completion time
-                  "tags": ['measures of variation', 'rule of thumb', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -860,17 +870,17 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.1e Apply the Range Rule to Find Probabilities", //optional objective title
+              "title": "3.1e Apply the Range Rule to Identify Unusual Values", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using Rule of Thumb to Create a 'Usual' Range of Values", //required button text 
+                  "url": "https://youtu.be/5iJg8lfnPEI", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "4:53", // optional - completion time
+                  "tags": ['measures of variation', 'rule of thumb', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
