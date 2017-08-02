@@ -348,7 +348,7 @@ app.controller("myCtrl", function ($scope) {
                   "url": "https://youtu.be/LkgEHm7KpNA", //required
                   "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "5:12", // optional - completion time
+                  "time": "5:35", // optional - completion time
                   "tags": ['mean', 'standard deviation', 'video', 'frequency distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
@@ -362,14 +362,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.4a Find the Range of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Range, Variance, and Standard Deviation", //required button text 
+                  "url": "https://www.youtube.com/watch?v=E4HAYd0QnRc", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "12:33", // optional - completion time
+                  "tags": ['khan academy', 'range', 'variance', 'standard deviation', 'measures of variation']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -377,14 +377,34 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.4b Find the Variance and Standard Deviation of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Range, Variance, and Standard Deviation", //required button text 
+                  "url": "https://www.youtube.com/watch?v=E4HAYd0QnRc", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "12:33", // optional - completion time
+                  "tags": ['khan academy', 'range', 'variance', 'standard deviation', 'measures of variation']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Calculating Standard Deviation Step by Step", //required button text 
+                  "url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/measuring-spread-quantitative-data/a/calculating-standard-deviation-step-by-step", //required
+                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "12:33", // optional - completion time
+                  "tags": ['khan academy', 'standard deviation', 'measures of variation', 'practice']//optional tags
+                }, // end of link object - add a comma to add another link
+                 {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Measures of Center and Spread on Excel", //required button text 
+                  "url": "https://www.youtube.com/watch?v=LE0_eHsO5xE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:25", // optional - completion time
+                  "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -392,14 +412,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.4c Estimate the Standard Deviation of a Frequency Distribution", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Mean and Standard Deviation of a Grouped Frequency Distribution", //required button text 
+                  "url": "https://youtu.be/LkgEHm7KpNA", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "5:35", // optional - completion time
+                  "tags": ['mean', 'standard deviation', 'video', 'frequency distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
