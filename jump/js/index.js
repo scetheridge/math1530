@@ -387,6 +387,16 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['khan academy', 'range', 'variance', 'standard deviation', 'measures of variation']//optional tags
                 }, // end of link object - add a comma to add another link
                 {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "How to Calculate Standard Deviation and Variance", //required button text 
+                  "url": "https://youtu.be/qqOyy_NjflU", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "5:05", // optional - completion time
+                  "tags": ['variance', 'standard deviation', 'measures of variation', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
                   "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
                   "text": "Calculating Standard Deviation Step by Step", //required button text 
@@ -405,6 +415,16 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "2:25", // optional - completion time
                   "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Rule of Thumb to Create a 'Usual' Range of Values", //required button text 
+                  "url": "https://youtu.be/5iJg8lfnPEI", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "4:53", // optional - completion time
+                  "tags": ['measures of variation', 'rule of thumb', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -434,12 +454,22 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Percentiles", //required button text 
+                  "url": "https://www.varsitytutors.com/hotmath/hotmath_help/topics/percentile", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['percentiles', 'measures of relative standing', 'webpage']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Calculate Percentiles", //required button text 
+                  "url": "https://youtu.be/IChd2tzDPhw", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "9:58", // optional - completion time
+                  "tags": ['percentiles', 'measures of relative standing', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -449,12 +479,12 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Find a Five-Number Summary", //required button text 
+                  "url": "http://www.statisticshowto.com/how-to-find-a-five-number-summary-in-statistics/", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['five number summary', 'measures of relative standing', 'webpage']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -462,14 +492,44 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.5c Construct a Boxplot and Modified Boxplot for a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Box Plots the Five Number Summary", //required button text 
+                  "url": "https://youtu.be/7IRGuVCn4fg", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "12:47", // optional - completion time
+                  "tags": ['boxplot', 'five number summary', 'measures of relative standing', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Identifying Outliers", //required button text 
+                  "url": "https://youtu.be/o8Q0i9VzQZA", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:13", // optional - completion time
+                  "tags": ['boxplot', 'outliers', 'interquartile range', 'measures of relative standing', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Statdisk to Construct Boxplots", //required button text 
+                  "url": "https://youtu.be/8qBDzPsicsE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "1:23", // optional - completion time
+                  "tags": ['boxplot', 'statdisk', 'measures of relative standing', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Interactivate: Box Plot", //required button text 
+                  "url": "http://www.shodor.org/interactivate/activities/BoxPlot/", //required
+                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['boxplot', 'measures of relative standing', 'practice']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
