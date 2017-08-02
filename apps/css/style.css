@@ -8,3 +8,8 @@
 .container {
   margin-top: 50px;
 }
+
+.solution {
+  font-size: 2rem;
+  font-weight: bold;
+}
