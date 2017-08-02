@@ -197,14 +197,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.2c Construct a Dotplot", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "How to Make a Dot Plot", //required button text 
+                  "url": "https://www.youtube.com/watch?v=QUxoW9S3kKs", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "2:00", // optional - completion time
+                  "tags": ['dot plot', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "How to Make a Dot Plot Using Excel", //required button text 
+                  "url": "https://www.youtube.com/watch?v=KK_CEG-vqNU", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:08", // optional - completion time
+                  "tags": ['dot plot', 'excel', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -212,14 +222,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.2d Construct a Stem-and-leaf Plot", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "How to Make a Stem and Leaf Plot", //required button text 
+                  "url": "https://www.youtube.com/watch?v=_7m0Q_m2ppg", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "3:14", // optional - completion time
+                  "tags": ['stem and leaf plot', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -232,14 +242,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.3a Find the Mean of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using StatDisk to Find Descriptive Statistics", //required button text 
+                  "url": "https://youtu.be/Jza3XBwuHN4", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "1:36", // optional - completion time
+                  "tags": ['statdisk', 'measures of center', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Measures of Center and Spread on Excel", //required button text 
+                  "url": "https://www.youtube.com/watch?v=LE0_eHsO5xE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:25", // optional - completion time
+                  "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -247,14 +267,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.3b Find the Median of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using StatDisk to Find Descriptive Statistics", //required button text 
+                  "url": "https://youtu.be/Jza3XBwuHN4", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "1:36", // optional - completion time
+                  "tags": ['statdisk', 'measures of center', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Measures of Center and Spread on Excel", //required button text 
+                  "url": "https://www.youtube.com/watch?v=LE0_eHsO5xE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:25", // optional - completion time
+                  "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -262,14 +292,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.3c Find the Mode of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using StatDisk to Find Descriptive Statistics", //required button text 
+                  "url": "https://youtu.be/Jza3XBwuHN4", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "1:36", // optional - completion time
+                  "tags": ['statdisk', 'measures of center', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Measures of Center and Spread on Excel", //required button text 
+                  "url": "https://www.youtube.com/watch?v=LE0_eHsO5xE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:25", // optional - completion time
+                  "tags": ['excel', 'measures of center', 'measures of variation', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -277,14 +317,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.3d Find the Midrange of a Dataset", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "How to Find the Midrange", //required button text 
+                  "url": "https://www.youtube.com/watch?v=tYYaXebF_JU", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "4:18", // optional - completion time
+                  "tags": ['measures of center', 'midrange', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -292,14 +332,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.3e Estimate the Mean of a Frequency Distribution", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Mean, Median, and Mode from a Frequency Distribution", //required button text 
+                  "url": "https://youtu.be/gMaIREesP7Y", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "5:12", // optional - completion time
+                  "tags": ['mean', 'median', 'mode', 'measures of center', 'video', 'frequency distribution']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Mean and Standard Deviation of a Grouped Frequency Distribution", //required button text 
+                  "url": "https://youtu.be/LkgEHm7KpNA", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "5:12", // optional - completion time
+                  "tags": ['mean', 'standard deviation', 'video', 'frequency distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
