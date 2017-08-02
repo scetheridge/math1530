@@ -135,6 +135,26 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "8:18", // optional - completion time
                   "tags": ['frequency distribution', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Relative Frequency Distribution", //required button text 
+                  "url": "https://youtu.be/fZBVmACSEfs", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "8:18", // optional - completion time
+                  "tags": ['frequency distribution', 'relative frequency distribution', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Frequency Distribution Examples", //required button text 
+                  "url": "https://www.mathway.com/examples/statistics/frequency-distribution", //required
+                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['frequency distribution', 'practice', 'webpage']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -142,14 +162,34 @@ app.controller("myCtrl", function ($scope) {
               "title": "1.2b Graph a Frequency Distribution as a Histogram", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using Statdisk to Construct a Frequency Distribution and Histogram", //required button text 
+                  "url": "https://youtu.be/l8KtKhZsQzE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "8:18", // optional - completion time
+                  "tags": ['frequency distribution', 'histogram', 'video']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Histogram Simulation (Requires JAVA)", //required button text 
+                  "url": "http://onlinestatbook.com/stat_sim/histogram/index.html", //required
+                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['frequency distribution', 'histogram', 'practice']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Histogram Simulation Demonstration", //required button text 
+                  "url": "https://www.youtube.com/watch?v=63TJLZr52q4E", //required
+                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:12", // optional - completion time
+                  "tags": ['frequency distribution', 'histogram', 'practice', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
