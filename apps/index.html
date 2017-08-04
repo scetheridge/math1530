@@ -2,42 +2,53 @@
 <html lang="en">
 
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>MATH 1530 Apps</title>
-  <!-- <script src="https://www.desmos.com/api/v0.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script> -->
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
 
 </head>
 
 <body>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a href="http://elearn.pstcc.edu" target="_blank">Brightspace</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </header>
+
+
   <div class="container">
-<h1>MATH 1530 <small>Probability Calculators and Inference Applications</small></h1>
+    <div class="jumbotron">
+      <h1>MATH 1530 Calculators</h1>
+      <p>Use the links below to find probabilities and critical values from selected distributions, as well as to perform calculations
+        for statistical tests.</p>
+    </div>
 
-<div class="jumbotron">
-  <h1>Jumbotron</h1>
-  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
-</div>
+    <div class="row">
+      <div class="col">
+        <h2>Probability Distributions</h2>
+        <ul style="list-style-type:none">
+          <li> <a href="./binomialcalc.html" target="_blank"> Binomial Distribution</a> </li>
+          <li> <a href="./normalcalc.html" target="_blank">Normal Distribution</a> </li>
+          <li> <a href="./tdistribution.html" target="_blank">Student-t Distribution</a> </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Inference Applications</h2>
+        <ul style="list-style-type: none">
+          <li> <a href="./confidenceint.html" target="_blank">Estimating a Population Parameter </a> </li>
+          <li> <a href="./hyptests.html" target="_blank">Testing a Claim about a Population Parameter</a></li>
+        </ul>
+      </div>
+    </div>
 
-<p>Use the links below to find probabilities and critical values from selected distributions, as well as to perform calculations for statistical tests.</p>
-
-<h2>Probability Distributions</h2>
-<ul style="list-style-type:none">
-  <li> <a href="./normalcalc.html" target="_blank">Normal Distribution</a> </li>
-  <li> <a href="./tdistribution.html" target="_blank">Student-t Distribution</a> </li>
-</ul>
-
-<h2>Inference Applications</h2>
-<ul style="list-style-type: none">
-  <li> <a href="./confidenceint.html" target="_blank">Estimating a Population Parameter </a> </li>
-  <li> <a href="./hyptests.html" target="_blank">Testing a Claim about a Population Parameter</a></li>
-</ul>
-
-</div>
 </body>
 
 </html>
