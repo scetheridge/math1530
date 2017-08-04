@@ -8,8 +8,16 @@
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+=======
+     <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
 </head>
 
@@ -19,7 +27,12 @@
         <h1>{{title}}</h1>
         <hr>
         <p>Select the correct parameter and use the spaces below to compute the test statistic and \(P\)-value for a hypothesis
+<<<<<<< HEAD
             test.</p>
+=======
+            test.
+        </p>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
         <div class="row">
             <div class="col">
                 <h2>Proportion</h2>
@@ -32,28 +45,41 @@
 
                     <label class="control-label" for="nprop"> \(n\): </label>
                     <input v-model.number="nprop" type="number" step="1" class="form-control" id="nprop">
+<<<<<<< HEAD
 
                 </div>
+=======
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
+                </div>
                 <hr>
-
                 <p>Test Stastic: </p>
                 <p>\[z = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
                 <p>z = {{propstat}}</p>
+<<<<<<< HEAD
                 <p>To compute relevant critical values, use <a href="./normalcalc.html" target="_blank"> this calculator</a>.
                     </p>
+=======
+                
+                <p>To compute relevant critical values, use <a href="./normalcalc.html" target="_blank"> this calculator</a>.</p>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
                 <hr>
-                <p>\(P\)-values:</p>
+                <p>P-values:</p>
                 <p>Left-tailed: {{propleft}}</p>
-
                 <p>Right-tailed: {{1-propleft}}</p>
+<<<<<<< HEAD
 
                 <!-- TODO: figure out switch statement for two-tailed p-value -->
                 <!-- <p>Two-tailed: {{propleft*2}}</p> -->
 
 
+=======
+                <p v-if="propleft<0.5"> Two-tailed: {{propleft*2}}</p>
+                <p v-else> Two-tailed: {{(1-propleft)*2}}</p>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
             </div>
+
             <div class="col">
                 <h2>Mean</h2>
                 <div class="form-group">
@@ -76,17 +102,25 @@
                 <p> \[t = \frac{\bar{x}-\mu_0}{s / \! \sqrt{n}} \] </p>
                 <p> t = {{meanstat}} </p>
 
+<<<<<<< HEAD
                 <p>To compute relevant critical values, use <a href="./tdistribution.html"
                         target="_blank"> this calculator</a>. </p>
+=======
+                <p>To compute relevant critical values, use <a href="./tdistribution.html" target="_blank"> this calculator</a>.</p>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
                 <hr>
-                <p>\(P\)-values:</p>
+                <p>P-values:</p>
                 <p>Left-tailed: {{meanleft}}</p>
-
                 <p>Right-tailed: {{1-meanleft}}</p>
+<<<<<<< HEAD
 
                 <!-- TODO: figure out switch statement for two-tailed p-value -->
                 <!-- <p>Two-tailed: {{propleft*2}}</p> -->
+=======
+                <p v-if="meanleft<0.5"> Two-tailed: {{meanleft*2}}</p>
+                <p v-else> Two-tailed: {{(1-meanleft)*2}}</p>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
             </div>
 
@@ -110,6 +144,7 @@
         <hr>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<<<<<<< HEAD
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
     <script>
@@ -147,6 +182,10 @@
             }
         });
     </script>
+=======
+
+    <script src="js/hyptests.js"/> </script>
+>>>>>>> 5ec642ef63fb54153ec3a2496e83851e8b35afce
 
 </body>
 
