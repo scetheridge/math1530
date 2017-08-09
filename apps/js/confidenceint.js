@@ -11,19 +11,20 @@
                 sd: 2,
                 nmean: 100,
                 clevelm: 0.95,
-                b: 0
+                b: 0,
+                precision: 6
             },
             computed: {
                 properr: function () {
                     var alp1 = (1 - this.clevelp) / 2;
                     var marg = Math.sqrt(this.phat*(1-this.phat) / this.nprop);
-                    this.b = (marg*jStat.normal.inv(1-alp1,0,1)).toFixed(6);
+                    this.b = (marg*jStat.normal.inv(1-alp1,0,1)).toFixed(this.precision);
                     return this.b;
                 },
                 meanerr: function() {
                     var alp = (1 - this.clevelm) / 2;
                     var marg2 = this.sd / Math.sqrt(this.nmean);
-                    return (marg2*(jStat.studentt.inv(1-alp, this.nmean))).toFixed(6);
+                    return (marg2*(jStat.studentt.inv(1-alp, this.nmean))).toFixed(this.precision);
                 }
             }
             // updated: function() {

@@ -39,10 +39,10 @@
             <input class="form-control" type="number" v-model.number="sx" id="x" max="{{n}}">
           </div>
         </div>
+
         <hr>
-        <p>Mean: {{(n*p).toPrecision(4)}}</p>
-        <p>Standard Deviation:</p>
-        <p>Variance:</p>
+        <p>Mean: {{(n*p).toFixed(4)}}</p>
+        <p>Standard Deviation: {{Math.sqrt(n*p*(1-p)).toFixed(6)}}</p>
 
 
       </div>

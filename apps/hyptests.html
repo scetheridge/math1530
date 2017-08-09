@@ -20,7 +20,7 @@
 
         <h1>{{title}}</h1>
         <hr>
-        <p>Select the correct parameter and use the spaces below to compute the test statistic and \(P\)-value for a hypothesis
+        <p>Select the correct parameter and use the spaces below to compute the test statistic and P-value for a hypothesis
             test. </p>
         <div class="row">
             <div class="col">
@@ -45,10 +45,10 @@
 
                 <hr>
                 <p>P-values:</p>
-                <p>Left-tailed: {{propleft}}</p>
-                <p>Right-tailed: {{1-propleft}}</p>
-                <p v-if="propleft<0.5"> Two-tailed: {{propleft*2}}</p>
-                <p v-else> Two-tailed: {{(1-propleft)*2}}</p>
+                <p class="text-center solution">Left-tailed: {{propleft}}</p>
+                <p class="text-center solution">Right-tailed: {{propright}}</p>
+                <p class="text-center solution"> Two-tailed: {{proptwo}}</p>
+                
             </div>
 
             <div class="col">
@@ -77,10 +77,9 @@
 
                 <hr>
                 <p>P-values:</p>
-                <p>Left-tailed: {{meanleft}}</p>
-                <p>Right-tailed: {{1-meanleft}}</p>
-                <p v-if="meanleft<0.5"> Two-tailed: {{meanleft*2}}</p>
-                <p v-else> Two-tailed: {{(1-meanleft)*2}}</p>
+                <p class="text-center solution">Left-tailed: {{meanleft}}</p>
+                <p class="text-center solution">Right-tailed: {{meanright}}</p>
+                <p class="text-center solution"> Two-tailed: {{meantwo}} </p>
 
             </div>
 

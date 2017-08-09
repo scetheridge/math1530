@@ -7,14 +7,15 @@ var app = new Vue({
     df: 29,
     area: 0.05,
     df2: 28,
-    area2: 0.025
+    area2: 0.025,
+    precision: 6
   },
   computed: {
     tcv: function () {
-      return jStat.studentt.inv(this.area, this.df)
+      return jStat.studentt.inv(this.area, this.df).toFixed(this.precision);
     },
     tcv2: function () {
-      return jStat.studentt.inv(this.area2, this.df2)
+      return jStat.studentt.inv(this.area2, this.df2).toFixed(this.precision);
     }
   },
   methods: {
