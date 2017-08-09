@@ -144,7 +144,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "1.2 Summarizing and Graphing Data", //required topic title
           "objectives": [
             {
-              "title": "1.2a Construct a Frequency Distribution", //optional objective title
+              "title": "1.2a Frequency Distributions", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -154,7 +154,7 @@ app.controller("myCtrl", function ($scope) {
                   "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "8:18", // optional - completion time
-                  "tags": ['frequency distribution', 'video']//optional tags
+                  "tags": ['frequency distributions', 'video']//optional tags
                 }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -179,7 +179,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.2b Graph a Frequency Distribution as a Histogram", //optional objective title
+              "title": "1.2b Frequency Distribution as a Histogram", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -214,7 +214,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.2c Construct a Dotplot", //optional objective title
+              "title": "1.2c Dotplots", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -239,7 +239,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.2d Construct a Stem-and-leaf Plot", //optional objective title
+              "title": "1.2d Stem-and-leaf Plots", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -259,7 +259,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "1.3 Measures of Center", //required topic title
           "objectives": [
             {
-              "title": "1.3a Find the Mean of a Dataset", //optional objective title
+              "title": "1.3a Mean", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -284,7 +284,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.3b Find the Median of a Dataset", //optional objective title
+              "title": "1.3b Median", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -309,7 +309,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.3c Find the Mode of a Dataset", //optional objective title
+              "title": "1.3c Mode", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -334,7 +334,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.3d Find the Midrange of a Dataset", //optional objective title
+              "title": "1.3d Midrange", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -349,7 +349,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.3e Estimate the Mean of a Frequency Distribution", //optional objective title
+              "title": "1.3e Mean of a Frequency Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -379,7 +379,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "1.4 Measures of Variation", //required topic title
           "objectives": [
             {
-              "title": "1.4a Find the Range of a Dataset", //optional objective title
+              "title": "1.4a Range", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -394,7 +394,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.4b Find the Variance and Standard Deviation of a Dataset", //optional objective title
+              "title": "1.4b Variance and Standard Deviation", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -439,7 +439,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.4c Estimate the Standard Deviation of a Frequency Distribution", //optional objective title
+              "title": "1.4c Standard Deviation of a Frequency Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -459,7 +459,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "1.5 Measures of Relative Standing", //required topic title
           "objectives": [
             {
-              "title": "1.5a Find a Specific Percentile for a Dataset", //optional objective title
+              "title": "1.5a Percentiles", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -484,7 +484,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.5b Find the Five Number Summary for a Dataset", //optional objective title
+              "title": "1.5b The Five Number Summary", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -499,7 +499,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "1.5c Construct a Boxplot and Modified Boxplot for a Dataset", //optional objective title
+              "title": "1.5c Boxplots", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -569,7 +569,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.1b Solve Basic Probability Problems", //optional objective title
+              "title": "2.1b Basic Probability", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -584,7 +584,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.1c Use Probability Rules for Complementary Events", //optional objective title
+              "title": "2.1c Complementary Events", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -604,7 +604,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.2 The Addition Rule", //required topic title
           "objectives": [
             {
-              "title": "2.2a Identify Sets of Disjoint Events", //optional objective title
+              "title": "2.2a Disjoint Events", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -619,7 +619,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.2b Apply the Addition Rule", //optional objective title
+              "title": "2.2b Addition Rule", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -634,7 +634,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.2c Apply the Addition Rule to a Contingency Table", //optional objective title
+              "title": "2.2c Contingency Tables", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -654,7 +654,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.3 Conditional Probability and the Multiplication Rule", //required topic title
           "objectives": [
             {
-              "title": "2.3a Apply the Multiplication Rule to Independent Events", //optional objective title
+              "title": "2.3a Independent Events", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -669,7 +669,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.3b Apply the Multiplication Rule to Dependent Events", //optional objective title
+              "title": "2.3b Dependent Events", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -684,7 +684,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.3c Apply the Multiplication Rule to a Contingency Table", //optional objective title
+              "title": "2.3c Applying the Multiplication Rule to a Contingency Table", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -704,7 +704,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.4 Random Variables and Discrete Probability Distributions", //required topic title
           "objectives": [
             {
-              "title": "2.4a Identify Discrete Probability Distributions and Their Random Variables", //optional objective title
+              "title": "2.4a Discrete Probability Distributions and Random Variables", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -719,7 +719,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.4b Find Probabilities Using a Discrete Probability Distribution", //optional objective title
+              "title": "2.4b Finding Probabilities Using a Discrete Probability Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -734,7 +734,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.4c Determine the Mean, Variance, and Standard Deviation of a Discrete Probability Distribution", //optional objective title
+              "title": "2.4c Descriptive Statistics of a Discrete Probability Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -754,7 +754,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.5 Binomial Probability Distributions", //required topic title
           "objectives": [
             {
-              "title": "2.5a Identify Binomial Probability Distributions and Their Random Variables", //optional objective title
+              "title": "2.5a Binomial Probability Distributions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -769,7 +769,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.5b Find Probabilities Using a Binomial Probability Distribution", //optional objective title
+              "title": "2.5b Finding Probabilities Using a Binomial Probability Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -784,7 +784,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.5c Determine the Mean, Variance, and Standard Deviation of a Binomial Probability Distribution", //optional objective title
+              "title": "2.5c Descriptive Statistics of a Binomial Probability Distribution", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -809,7 +809,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "3.1 Introduction to Continuous Distributions", //required topic title
           "objectives": [
             {
-              "title": "3.1a Continuous Distributions and Random Variables", //optional objective title
+              "title": "3.1a Continuous Distributions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -824,7 +824,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.1b Find Probabilities for a Uniform Distribution", //optional objective title
+              "title": "3.1b Uniform Distributions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -837,9 +837,14 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['khan academy', 'z-values']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "3.2 Introduction to Normal Distributions", //required topic title
+          "objectives": [
             {
-              "title": "3.1c Apply the Empirical Rule to Normal Distributions", //optional objective title
+              "title": "3.2a Normal Distributions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -855,7 +860,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.1d Find and Interpret z-scores", //optional objective title
+              "title": "3.2b z-scores", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -870,7 +875,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.1e Apply the Range Rule to Identify Unusual Values", //optional objective title
+              "title": "3.2c The Range Rule of Thumb", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -887,10 +892,10 @@ app.controller("myCtrl", function ($scope) {
           ] // end of objectives array
         }, // end of topic object - add a comma here to add another topic
         {
-          "title": "3.2 Probabilities for Normal Distributions", //required topic title
+          "title": "3.3 Probabilities for Normal Distributions", //required topic title
           "objectives": [
             {
-              "title": "3.2a Use z-scores to Find Probabilities", //optional objective title
+              "title": "3.3a Using z-scores to Find Probabilities", //optional objective title
               "links": [
                  {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -935,7 +940,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.2b Find the Value of a Normal Random Variable From Probability", //optional objective title
+              "title": "3.3b Using Probability to find Population Values", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1018,9 +1023,14 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['normal distribution', 'z-score', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
+            } // end of an objective - add a comma here to add anohter objective
+          ] // end of objectives array
+        }, // end of topic object - add a comma here to add another topic
+        {
+          "title": "3.4 The Central Limit Theorem", //required topic title
+          "objectives": [        
             {
-              "title": "3.2c Use the Central Limit Theorem to Calculate Probabilities", //optional objective title
+              "title": "3.4a Using the Central Limit Theorem", //optional objective title
               "links": [
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
@@ -1107,10 +1117,10 @@ app.controller("myCtrl", function ($scope) {
           ] // end of objectives array
         }, // end of topic object - add a comma here to add another topic
         {
-          "title": "3.3 Confidence Intervals: Proportions", //required topic title
+          "title": "3.5 Confidence Intervals: Proportions", //required topic title
           "objectives": [
             {
-              "title": "3.3a Construct a Confidence Interval for a Population Proportion", //optional objective title
+              "title": "3.5a Confidence Intervals for Population Proportions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1145,22 +1155,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.3b Calculate Minimum Sample Size for Proportion", //optional objective title
-              "links": [
-                {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "3.3c Find Point-estimate and Margin of Error", //optional objective title
+              "title": "3.5b Point-estimates and the Margin of Error", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1183,14 +1178,29 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['confidence intervals', 'population proportion', 'webpage']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
+            }, // end of an objective - add a comma here to add anohter objective
+            {
+              "title": "3.5c Minimum Sample Size for Estimating Population Proportions", //optional objective title
+              "links": [
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Something about distribution", //required button text 
+                  "url": "https://yahoo.com", //required
+                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:30", // optional - completion time
+                  "tags": ['khan academy', 'z-values']//optional tags
+                } // end of link object - add a comma to add another link
+              ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
           ] // end of objectives array
         }, // end of topic object - add a comma here to add another topic
         {
-          "title": "3.4 Confidence Intervals: Means", //required topic title
+          "title": "3.6 Confidence Intervals: Means", //required topic title
           "objectives": [
             {
-              "title": "3.4a Construct a Confidence Interval for a Population Mean", //optional objective title
+              "title": "3.6a Confidence Intervals for Population Means", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1245,17 +1255,17 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "3.4b Calculate Minimum Sample Size for Mean", //optional objective title
+              "title": "3.6b Minimum Sample Size for Estimating Population Mean", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Calculating Required Sample Size to Estimate Population Mean", //required button text 
+                  "url": "https://www.youtube.com/watch?v=4-5pFrqJz9w", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "", // optional - completion time
+                  "tags": ['confidence intervals', 'sample size', 'video']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -1270,32 +1280,62 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.1 Hypothesis Tests: Introduction", //required topic title
           "objectives": [
             {
-              "title": "4.1a Identify the Steps in a P-value Hypothesis Test", //optional objective title
+              "title": "4.1a Conducting a Hypothesis Test", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
+                  "text": "Introduction (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:nC-lwYiC@6/Introduction", //required
                   "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['openstax', 'hypothesis testing']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Intro to Hypothesis Testing", //required button text 
+                  "url": "https://youtu.be/VK-rnA3-41c", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['hypothesis testing']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Distributions Needed for Hypothesis Testing", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:CNwYFOjX@3/Distribution-Needed-for-Hypoth", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "tags": ['hypothesis testing']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.1b Translate Text Claim into Null and Alternative Hypotheses", //optional objective title
+              "title": "4.1b The Null and Alternative Hypotheses", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
+                  "text": "Null and Alternative Hypotheses (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:W0j59DyL@3/Null-and-Alternative-Hypothese", //required
                   "type": type[0], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "", // optional - completion time
+                  "tags": ['openstax', 'hypothesis testing', 'null hypothesis', 'alternative hypothesis']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Easy Rule for Setting Up the Null and Alternative Hypotheses", //required button text 
+                  "url": "https://youtu.be/R2hxisYFKxM", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['openstax', 'hypothesis testing', 'null hypothesis', 'alternative hypothesis']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -1305,52 +1345,87 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.2 Hypothesis Tests: Proportions", //required topic title
           "objectives": [
             {
-              "title": "4.2a Calculate Test Statistic to Test a Claim About a Proportion", //optional objective title
+              "title": "4.2a-b Calculating the Test Statistic and P-value", //optional objective title
               "links": [
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Proportion Hypothesis Testing Tutorial", //required button text 
+                  "url": "https://youtu.be/KUmvv0o93RA", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "11:17", // optional - completion time
+                  "tags": ['hypothesis testing', 'proportions', 'p-value', 'test statistic']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Hypothesis Testing of the Population Proportion", //required button text 
+                  "url": "https://youtu.be/R3Z0TpHHQ9w", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "16:19", // optional - completion time
+                  "tags": ['hypothesis testing', 'proportions', 'p-value', 'test statistic']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Statdisk to Test a Claim About a Proportion", //required button text 
+                  "url": "https://youtu.be/ZCtHxqLgeBU", //required
+                  "type": type[3], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:56", // optional - completion time
+                  "tags": ['hypothesis testing', 'proportions', 'p-value', 'test statistic']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "text": "What is a p-value?", //required button text 
+                  "url": "http://www.mathbootcamps.com/what-is-a-p-value/", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
                   "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "tags": ['p-values', 'hypothesis testing']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.2b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "title": "4.2c Finding the Conclusion", //optional objective title
               "links": [
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "To Reject or Fail to Reject?", //required button text 
+                  "url": "https://www.youtube.com/watch?v=K0Jw8T7tGCc", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:02", // optional - completion time
+                  "tags": ['hypothesis testing', 'conclusion']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Writing the Conclusion to a Hypothesis Test", //required button text 
+                  "url": "https://www.youtube.com/watch?v=EJf17R9ExpM", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "9:44", // optional - completion time
+                  "tags": ['hypothesis testing', 'conclusion']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Outcomes and the Type I and Type II Errors (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:U0nfVP8B@3/Outcomes-and-the-Type-I-and-Ty", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['hypothesis testing', 'conclusion', 'type i error', 'type ii error', 'openstax']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.2c Formulate Conclusion About the Original Claim", //optional objective title
-              "links": [
-                {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.2d Explore Use of Confidence Intervals to Test a Claim", //optional objective title
+              "title": "4.2d Testing a Claim Using Confidence Intervals", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1370,7 +1445,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.3 Hypothesis Tests: Means", //required topic title
           "objectives": [
             {
-              "title": "4.3a Calculate Test Statistic to Test a Claim About a Mean", //optional objective title
+              "title": "4.3a Calculating the Test Statistic", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1385,7 +1460,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.3b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "title": "4.3b Using P-values", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1400,7 +1475,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.3c Formulate Conclusion About the Original Claim", //optional objective title
+              "title": "4.3c Finding the Conclusion", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1420,7 +1495,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.4 Hypothesis Tests: Standard Deviations", //required topic title
           "objectives": [
             {
-              "title": "4.4a Calculate Test Statistic to Test a Claim About a Standard Deviation", //optional objective title
+              "title": "4.4a Calculating the Test Statistic", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1435,7 +1510,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.4b Use P-value to Evaluate Null Hypothesis for the Test", //optional objective title
+              "title": "4.4b Using P-values", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1450,7 +1525,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.4c Formulate Conclusion About the Original Claim", //optional objective title
+              "title": "4.4c Finding the Conclusion", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1470,7 +1545,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.5 Linear Correlation and Regression", //required topic title
           "objectives": [
             {
-              "title": "4.5a Construct a Scatterplot for a Dataset of Ordered Pairs", //optional objective title
+              "title": "4.5a Scatterplots of Ordered Pairs", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1485,7 +1560,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.5b Evaluate Whether a Significant Linear Correlation Exists in a Set of Ordered Pairs", //optional objective title
+              "title": "4.5b Linear Correlation", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1500,7 +1575,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.5c Find the Linear Regression Equation for a Set of Ordered Pairs", //optional objective title
+              "title": "4.5c Linear Regression", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1515,7 +1590,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.5d Determine When to Use the Linear Regression for Predictions", //optional objective title
+              "title": "4.5d Making Predictions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1535,7 +1610,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.6 Goodness of Fit", //required topic title
           "objectives": [
             {
-              "title": "4.6a Test the Goodness of Fit for a Multinomial Distribution with Equal Expected Values", //optional objective title
+              "title": "4.6a Goodness of Fit with Equal Expected Values", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1550,7 +1625,7 @@ app.controller("myCtrl", function ($scope) {
               ] // end of links array            
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.6b Test the Goodness of Fit for a Multinomial Distribution with Unequal Expected Values", //optional objective title
+              "title": "4.6b Goodness of Fit with Unequal Expected Values", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
@@ -1570,7 +1645,7 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.7 Test for Independence", //required topic title
           "objectives": [
             {
-              "title": "4.7a Test a Hypothesis About Independence of Variables in Contingency Tables", //optional objective title
+              "title": "4.7a Independence and Contingency Tables", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
