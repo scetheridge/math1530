@@ -6,14 +6,21 @@
   <title>Binomial Calculator Vue JS</title>
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="css/bionmstyle.css">
+  <style>
+    .container {
+      margin-top: 40px;
+    }
 
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    .my-table {
+      height: 700px;
 
+      overflow-y: auto;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="binomial" class="container-fluid">
+  <div id="binomial" class="container">
     <h1>Binomial Calculator</h1>
     <hr>
     <div class="row">
@@ -77,9 +84,35 @@
     <p v-if="n>nmax && sx==''">The values you have entered are invalid</p>
   </div>
 
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.7.0/jstat.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
-  <script src="./js/jstat.min.js"></script>
-  <script src="js/binomialcalc.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: "#binomial",
+      data: {
+        nmax: 30,
+        n: 10,
+        p: 0.1,
+        precision: 6,
+        sx: ""
+      },
+      methods: {
+        prob: function (i) {
+          return jStat.binomial.pdf(i, this.n, this.p).toFixed(this.precision);
+        },
+        pxorless: function (i) {
+          return jStat.binomial.cdf(i, this.n, this.p).toFixed(this.precision);
+        },
+        pxormore: function (i) {
+          let ptdens = jStat.binomial.pdf(i, this.n, this.p);
+          let rightarea = 1 - jStat.binomial.cdf(i, this.n, this.p);
+          return (ptdens + rightarea).toFixed(this.precision);
+        }
+      }
+    });
+  </script>
 
 
 </body>

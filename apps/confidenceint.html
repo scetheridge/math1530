@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Confidence Intervals</title>
-
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
 
-    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
-
+        .solution {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .form-group{
+            min-height: 285px;
+        }
+        /* TODO change the above min height to be only when the items aren't on top of each other */
+    </style>
 </head>
 
 <body>
@@ -82,9 +90,48 @@
 
     <hr>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.7.0/jstat.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
 
-    <script src="js/confidenceint.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Estimating Population Parameters",
+                phat: 0.5,
+                nprop: 100,
+                clevelp: 0.95,
+                xbar: 10,
+                sd: 2,
+                nmean: 100,
+                clevelm: 0.95,
+                b: 0,
+                precision: 6
+            },
+            computed: {
+                properr: function () {
+                    var alp1 = (1 - this.clevelp) / 2;
+                    var marg = Math.sqrt(this.phat * (1 - this.phat) / this.nprop);
+                    this.b = (marg * jStat.normal.inv(1 - alp1, 0, 1)).toFixed(this.precision);
+                    return this.b;
+                },
+                meanerr: function () {
+                    var alp = (1 - this.clevelm) / 2;
+                    var marg2 = this.sd / Math.sqrt(this.nmean);
+                    return (marg2 * (jStat.studentt.inv(1 - alp, this.nmean))).toFixed(this.precision);
+                }
+            }
+            // updated: function() {
+            //     var math = MathJax.Hub.getAllJax("test123")[0];
+            //     MathJax.Hub.Queue(["Text",math,this.b]);
+            //     // MathJax.Hub.Typeset();
+            //     // var math = MfathJax.Hub.getallJax
+            //     // MathJax.Hub.Queue(["Typeset",MathJax.Hub, "test123"]);
+            // }
+        });
+    </script>
 
 </body>
 

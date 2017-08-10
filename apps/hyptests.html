@@ -7,11 +7,22 @@
     <title>Hypothesis Testing</title>
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
 
+        .solution {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .form-group {
+            min-height: 285px;
+        }
+        /* TODO change the above min height to be only when the items aren't on top of each other */
+    </style>
 
 </head>
 
@@ -48,7 +59,7 @@
                 <p class="text-center solution">Left-tailed: {{propleft}}</p>
                 <p class="text-center solution">Right-tailed: {{propright}}</p>
                 <p class="text-center solution"> Two-tailed: {{proptwo}}</p>
-                
+
             </div>
 
             <div class="col">
@@ -103,8 +114,70 @@
         <hr>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.7.0/jstat.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 
-    <script src="js/hyptests.js" /> </script>
+    <script>
+        // APP Start
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                title: "Hypothesis Testing",
+                pnot: 0.3,
+                phat: 0.5,
+                nprop: 100,
+                munot: 12,
+                xbar: 11.5,
+                sd: 5,
+                nmean: 100,
+                precision: 6
+            },
+            computed: {
+                propstat: function () {
+                    var stat = (this.phat - this.pnot) / (Math.sqrt(this.pnot * (1 - this.pnot) / this.nprop));
+                    return stat.toFixed(this.precision);
+                },
+                propleft: function () {
+                    var stat = (this.phat - this.pnot) / (Math.sqrt(this.pnot * (1 - this.pnot) / this.nprop));
+                    return (jStat.normal.cdf(stat, 0, 1)).toFixed(this.precision);
+                },
+                propright: function () {
+                    return (1 - this.propleft).toFixed(this.precision);
+                },
+                proptwo: function () {
+                    if (this.propleft < 0.5) {
+                        return (2 * this.propleft).toFixed(this.precision);
+                    }
+                    else {
+                        return (2 * (1 - this.propleft)).toFixed(this.precision);
+                    }
+
+                },
+                meanstat: function () {
+                    var stat = (this.xbar - this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return stat.toFixed(this.precision);
+                },
+                meanleft: function () {
+                    var stat = (this.xbar - this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return (jStat.studentt.cdf(stat, this.nmean - 1)).toFixed(this.precision);
+                },
+                meanright: function () {
+                    return (1 - this.meanleft).toFixed(this.precision);
+                },
+                meantwo: function () {
+                    if (this.meanleft < 0.5) {
+                        return (2 * this.meanleft).toFixed(this.precision);
+                    }
+                    else {
+                        return (2 * (1 - this.meanleft)).toFixed(this.precision);
+                    }
+
+                }
+            }
+        });
+
+    </script>
 
 </body>
 
