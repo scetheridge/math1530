@@ -8,12 +8,21 @@
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-<!--TODO download jStat and copy here-->
+    <style>
+        .container {
+            margin-top: 50px;
+        }
 
-    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
-    <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
-</script>
+        .solution {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .form-group {
+            min-height: 285px;
+        }
+        /* TODO change the above min height to be only when the items aren't on top of each other */
+    </style>
 
 </head>
 
@@ -22,7 +31,8 @@
 
         <h1>{{title}}</h1>
         <hr>
-        <p>Select the correct parameter and use the spaces below to compute the test statistic and \(P\)-value for a hypothesis test.</p>
+        <p>Select the correct parameter and use the spaces below to compute the test statistic and P-value for a hypothesis
+            test. </p>
         <div class="row">
             <div class="col">
                 <h2>Proportion</h2>
@@ -35,27 +45,23 @@
 
                     <label class="control-label" for="nprop"> \(n\): </label>
                     <input v-model.number="nprop" type="number" step="1" class="form-control" id="nprop">
-                    
+
                 </div>
-
                 <hr>
-
                 <p>Test Stastic: </p>
                 <p>\[z = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0 \cdot (1-p_0)}{n}}}\]</p>
                 <p>z = {{propstat}}</p>
-                <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps" target="_blank"> this calculator</a>. </p>
+
+                <p>To compute relevant critical values, use <a href="./normalcalc.html" target="_blank"> this calculator</a>.</p>
 
                 <hr>
-                <p>\(P\)-values:</p>
-                <p>Left-tailed: {{propleft}}</p>
-
-                <p>Right-tailed: {{1-propleft}}</p>
-
-            <!-- TODO: figure out switch statement for two-tailed p-value -->
-                <!-- <p>Two-tailed: {{propleft*2}}</p> -->
-
+                <p>P-values:</p>
+                <p class="text-center solution">Left-tailed: {{propleft}}</p>
+                <p class="text-center solution">Right-tailed: {{propright}}</p>
+                <p class="text-center solution"> Two-tailed: {{proptwo}}</p>
 
             </div>
+
             <div class="col">
                 <h2>Mean</h2>
                 <div class="form-group">
@@ -71,29 +77,24 @@
                     <label class="control-label" for="nmean"> \(n\): </label>
                     <input v-model.number="nmean" type="number" step="1" class="form-control" id="nmean">
 
-                    <label class="control-label" for="clevelm"> Confidence level: </label>
-                    <input v-model.number="clevelm" type="number" step=".01" class="form-control" id="clevelm">
                 </div>
 
                 <hr>
                 <p>Test Statistic: </p>
-                <p> \[t = \frac{\bar{x}-\mu_0}{s / \! \sqrt{n}}  \] </p>
+                <p> \[t = \frac{\bar{x}-\mu_0}{s / \! \sqrt{n}} \] </p>
                 <p> t = {{meanstat}} </p>
 
-                <p>To compute relevant critical values, use <a href="https://bellecurve.github.io/math1530/apps/tdistribution.html" target="_blank"> this calculator</a>. </p>
+                <p>To compute relevant critical values, use <a href="./tdistribution.html" target="_blank"> this calculator</a>.</p>
 
                 <hr>
-                <p>\(P\)-values:</p>
-                <p>Left-tailed: {{meanleft}}</p>
-
-                <p>Right-tailed: {{1-meanleft}}</p>
-
-            <!-- TODO: figure out switch statement for two-tailed p-value -->
-                <!-- <p>Two-tailed: {{propleft*2}}</p> -->
+                <p>P-values:</p>
+                <p class="text-center solution">Left-tailed: {{meanleft}}</p>
+                <p class="text-center solution">Right-tailed: {{meanright}}</p>
+                <p class="text-center solution"> Two-tailed: {{meantwo}} </p>
 
             </div>
 
-             <!-- <div class="col">
+            <!-- <div class="col">
                 <h2>Standard Deviation</h2>
                 <div class="form-group">
                     <label class="control-label" for="stddev"> \(s\): </label>
@@ -113,7 +114,8 @@
         <hr>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.7.0/jstat.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
 
     <script>
         // APP Start
@@ -126,29 +128,55 @@
                 phat: 0.5,
                 nprop: 100,
                 munot: 12,
-                xbar: 10,
-                sd: 2,
-                nmean: 100
+                xbar: 11.5,
+                sd: 5,
+                nmean: 100,
+                precision: 6
             },
             computed: {
                 propstat: function () {
-                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
-                    return stat
+                    var stat = (this.phat - this.pnot) / (Math.sqrt(this.pnot * (1 - this.pnot) / this.nprop));
+                    return stat.toFixed(this.precision);
                 },
                 propleft: function () {
-                    var stat = (this.phat-this.pnot) / (Math.sqrt(this.pnot*(1-this.pnot)/this.nprop));
-                    return jStat.normal.cdf(stat, 0, 1)
+                    var stat = (this.phat - this.pnot) / (Math.sqrt(this.pnot * (1 - this.pnot) / this.nprop));
+                    return (jStat.normal.cdf(stat, 0, 1)).toFixed(this.precision);
                 },
-                meanstat: function() {
-                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
-                    return stat
+                propright: function () {
+                    return (1 - this.propleft).toFixed(this.precision);
                 },
-                meanleft: function() {
-                    var stat = (this.xbar-this.munot) / (this.sd / Math.sqrt(this.nmean));
-                    return jStat.studentt.cdf(stat, this.nmean-1)
+                proptwo: function () {
+                    if (this.propleft < 0.5) {
+                        return (2 * this.propleft).toFixed(this.precision);
+                    }
+                    else {
+                        return (2 * (1 - this.propleft)).toFixed(this.precision);
+                    }
+
+                },
+                meanstat: function () {
+                    var stat = (this.xbar - this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return stat.toFixed(this.precision);
+                },
+                meanleft: function () {
+                    var stat = (this.xbar - this.munot) / (this.sd / Math.sqrt(this.nmean));
+                    return (jStat.studentt.cdf(stat, this.nmean - 1)).toFixed(this.precision);
+                },
+                meanright: function () {
+                    return (1 - this.meanleft).toFixed(this.precision);
+                },
+                meantwo: function () {
+                    if (this.meanleft < 0.5) {
+                        return (2 * this.meanleft).toFixed(this.precision);
+                    }
+                    else {
+                        return (2 * (1 - this.meanleft)).toFixed(this.precision);
+                    }
+
                 }
             }
         });
+
     </script>
 
 </body>

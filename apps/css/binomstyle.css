@@ -1,0 +1,8 @@
+.container{
+  margin-top: 40px;
+}
+.my-table{
+    height: 700px;
+    
+    overflow-y: auto;
+}

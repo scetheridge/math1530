@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Confidence Intervals</title>
-
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <style>
+        .container {
+            margin-top: 50px;
+        }
 
-<!--TODO download jStat and copy here-->
-
-    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
-    <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
-</script>
-
+        .solution {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .form-group{
+            min-height: 285px;
+        }
+        /* TODO change the above min height to be only when the items aren't on top of each other */
+    </style>
 </head>
 
 <body>
-    <div id="app" class="container-fluid">
+    <div id="app" class="container">
 
         <h1>{{title}}</h1>
         <hr>
@@ -28,7 +33,7 @@
                 <h2>Proportion</h2>
                 <div class="form-group">
                     <label class="control-label" for="phat"> \(\hat{p}\): </label>
-                    <input v-model.number="phat" type="number" step="0.1" class="form-control" id="phat">
+                    <input v-model.number="phat" type="number" step="0.1" class="form-control" id="phat" min="0" max="1">
                     <label class="control-label" for="nprop"> \(n\): </label>
                     <input v-model.number="nprop" type="number" step="1" class="form-control" id="nprop">
                     <label class="control-label" for="clevelp"> Confidence level: </label>
@@ -37,8 +42,9 @@
 
                 <hr>
 
-                <p>Margin of error: </p> <p> \[E = z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\] </p>
-                <p> <center> = {{properr}} </center> </p>
+                <p>Margin of error: </p>
+                <p> \[E = z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\] </p>
+                <p class="text-center solution"> = {{properr}} </p>
 
 
             </div>
@@ -55,17 +61,17 @@
                     <input v-model.number="nmean" type="number" step="1" class="form-control" id="nmean">
 
                     <label class="control-label" for="clevelm"> Confidence level: </label>
-                    <input v-model.number="clevelm" type="number" step=".01" class="form-control" id="clevelm">
+                    <input v-model.number="clevelm" type="number" step=".01" class="form-control" id="clevelm" max="1">
                 </div>
 
                 <hr>
                 <p>Margin of error: </p>
                 <p> \[E= t_{\alpha/2} \cdot \frac{s}{\sqrt{n}}\] </p>
-                <p> <center> = {{meanerr}} </center> </p>
+                <p class="text-center solution"> = {{meanerr}} </p>
 
             </div>
 
-             <!--<div class="col">
+            <!--<div class="col">
                 <h2>Standard Deviation</h2>
                 <div class="form-group">
                     <label class="control-label" for="stddev"> \(s\): </label>
@@ -79,17 +85,17 @@
                 <p> \[E =   \] </p>-->
 
 
-            </div>
         </div>
-
-        <hr>
     </div>
+
+    <hr>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstat/1.7.0/jstat.min.js"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
     <script>
-        // APP Start
-
         var app = new Vue({
             el: "#app",
             data: {
@@ -100,20 +106,30 @@
                 xbar: 10,
                 sd: 2,
                 nmean: 100,
-                clevelm: 0.95
+                clevelm: 0.95,
+                b: 0,
+                precision: 6
             },
             computed: {
                 properr: function () {
                     var alp1 = (1 - this.clevelp) / 2;
-                    var marg = Math.sqrt(this.phat*(1-this.phat) / this.nprop);
-                    return marg*jStat.normal.inv(1-alp1,0,1)
+                    var marg = Math.sqrt(this.phat * (1 - this.phat) / this.nprop);
+                    this.b = (marg * jStat.normal.inv(1 - alp1, 0, 1)).toFixed(this.precision);
+                    return this.b;
                 },
-                meanerr: function() {
+                meanerr: function () {
                     var alp = (1 - this.clevelm) / 2;
                     var marg2 = this.sd / Math.sqrt(this.nmean);
-                    return marg2*(jStat.studentt.inv(1-alp, this.nmean))
+                    return (marg2 * (jStat.studentt.inv(1 - alp, this.nmean))).toFixed(this.precision);
                 }
             }
+            // updated: function() {
+            //     var math = MathJax.Hub.getAllJax("test123")[0];
+            //     MathJax.Hub.Queue(["Text",math,this.b]);
+            //     // MathJax.Hub.Typeset();
+            //     // var math = MfathJax.Hub.getallJax
+            //     // MathJax.Hub.Queue(["Typeset",MathJax.Hub, "test123"]);
+            // }
         });
     </script>
 
