@@ -554,47 +554,42 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.1 Fundamentals of Probability", //required topic title
           "objectives": [
             {
-              "title": "2.1a Understand Properties of Probabilities", //optional objective title
+              "title": "2.1a Properties of Probabilities", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Probability (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/mwjClAV_@3.88:Dfuyh6VB@4/Probability", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Terminology (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:Gi99cJhF@6/Terminology", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'openstax']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "2.1b Basic Probability", //optional objective title
+              "title": "2.1b-c Basic Probability", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "How to Calculate Probability, Addition and Complements", //required button text 
+                  "url": "https://youtu.be/dqNvtYWmSrY", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "2.1c Complementary Events", //optional objective title
-              "links": [
-                {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "6:49", // optional - completion time
+                  "tags": ['probability', 'complements']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -607,14 +602,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "2.2a Disjoint Events", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Addition Rule for Probability (Khan Academy)", //required button text 
+                  "url": "https://youtu.be/QE2uR6Z-NcU", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "10:42", // optional - completion time
+                  "tags": ['probability', 'addition rule', 'khan academy']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -622,14 +617,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "2.2b Addition Rule", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Addition Rule for Probability (Khan Academy)", //required button text 
+                  "url": "https://youtu.be/QE2uR6Z-NcU", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "10:42", // optional - completion time
+                  "tags": ['probability', 'addition rule', 'khan academy']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -654,32 +649,47 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.3 Conditional Probability and the Multiplication Rule", //required topic title
           "objectives": [
             {
-              "title": "2.3a Independent Events", //optional objective title
+              "title": "2.3a-b Independent and Dependent Events", //optional objective title
               "links": [
-                {
+               {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Boy-Girl Conditional Probability", //required button text 
+                  "url": "https://youtu.be/MDzbD2Ay5b4", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "3:25", // optional - completion time
+                  "tags": ['probability', 'conditional probability']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "How to Calculate Conditional Probability", //required button text 
+                  "url": "https://youtu.be/H02B3aMNKzE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:43", // optional - completion time
+                  "tags": ['probability', 'conditional probability']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "2.3b Dependent Events", //optional objective title
-              "links": [
-                {
+                  "text": "Conditional Probability", //required button text 
+                  "url": "http://www.mathgoodies.com/lessons/vol6/conditional.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'conditional probability']//optional tags
+                }, // end of link object - add a comma to add another link
+               {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Independent and Mutually Exclusive Events (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:qLYH79kX@9/Independent-and-Mutually-Exclu", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'independent events', 'openstax']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -689,12 +699,22 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Two Basic Rules of Probability (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:0_rgGM3Y@4/Two-Basic-Rules-of-Probability", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Contingency Tables (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:NCj5CIRF@9/Contingency-Tables", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'openstax', 'contingency tables']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -704,33 +724,28 @@ app.controller("myCtrl", function ($scope) {
           "title": "2.4 Random Variables and Discrete Probability Distributions", //required topic title
           "objectives": [
             {
-              "title": "2.4a Discrete Probability Distributions and Random Variables", //optional objective title
+              "title": "2.4a-b Discrete Probability Distributions and Random Variables", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "2.4b Finding Probabilities Using a Discrete Probability Distribution", //optional objective title
-              "links": [
+                  "text": "Probability Distribution Function for a Discrete Random Variable (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:X8iM07Af@4/Probability-Distribution-Funct", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'discrete random variable', 'probability distribution', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Discrete Probability Distributions", //required button text 
+                  "url": "https://youtu.be/P7GdyQuFQYg", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
+                  "time": "16:17", // optional - completion time
+                  "tags": ['probability', 'probability distribution', 'discrete random variable']//optional tags
+               } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
@@ -739,12 +754,32 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Mean or Expected Value and Standard Deviation (OpenStax)", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:J3nUH8pG@9/Mean-or-Expected-Value-and-Sta", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'discrete random variable', 'probability distribution', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Expected Value on the TI-84", //required button text 
+                  "url": "https://youtu.be/3_a3o5OQkQc", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "6:29", // optional - completion time
+                  "tags": ['probability', 'probability distribution', 'discrete random variable']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Random Variables: Mean, Variance and Standard Deviation", //required button text 
+                  "url": "https://www.mathsisfun.com/data/random-variables-mean-variance.html", //required
+                  "type": type[4], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability', 'discrete random variable', 'probability distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -756,15 +791,35 @@ app.controller("myCtrl", function ($scope) {
             {
               "title": "2.5a Binomial Probability Distributions", //optional objective title
               "links": [
+                 {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Binomial Distribution", //required button text 
+                  "url": "https://youtu.be/E9GpfHQcdBg", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "9:27", // optional - completion time
+                  "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Binomial Distribution Formula", //required button text 
+                  "url": "http://www.statisticshowto.com/binomial-distribution-formula/", //required
+                  "type": type[4], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability distribution', 'discrete random variable', 'binomial probability distribution']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Binomial Distribution", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:vGiLOvP5@6/Binomial-Distribution", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability distribution', 'discrete random variable', 'binomial probability distribution', 'openstax']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -772,15 +827,25 @@ app.controller("myCtrl", function ($scope) {
               "title": "2.5b Finding Probabilities Using a Binomial Probability Distribution", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using Statdisk to Compute Binomial Probabilities", //required button text 
+                  "url": "https://youtu.be/SIpp-ywpRzk", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
+                  "time": "1:59", // optional - completion time
+                  "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Computing Binomial Probabilities (with TI-84)", //required button text 
+                  "url": "https://youtu.be/jkVlNZ21Ims", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:49", // optional - completion time
+                  "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable']//optional tags
+               } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
@@ -789,12 +854,12 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "text": "Binomial Probability Distribution (includes formulas)", //required button text 
+                  "url": "http://stattrek.com/probability-distributions/binomial.aspx?tutorial=stat", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['probability distribution', 'discrete random variable', 'binomial probability distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -812,14 +877,24 @@ app.controller("myCtrl", function ($scope) {
               "title": "3.1a Continuous Distributions", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "An Introduction toContinuous Probability Distributions", //required button text 
+                  "url": "https://www.youtube.com/watch?v=OWSOhpS00_s", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "5:51", // optional - completion time
+                  "tags": ['continuous probability distribution']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Probability Density Functions (Khan Academy)", //required button text 
+                  "url": "https://www.youtube.com/watch?v=Fvi9A_tEmXQ", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "10:01", // optional - completion time
+                  "tags": ['khan academy', 'continuous probability distribution', 'uniform distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -827,14 +902,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "3.1b Uniform Distributions", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Continuous Probability Distribution Intro (Khan Academy)", //required button text 
+                  "url": "https://www.youtube.com/watch?v=j8XLYFzTJzE", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "tags": ['khan academy', 'continuous probability distribution', 'uniform distribution']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -1183,14 +1258,14 @@ app.controller("myCtrl", function ($scope) {
               "title": "3.5c Minimum Sample Size for Estimating Population Proportions", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Find Minimum Sample Size to Estimate Population Proportion (on TI-84)", //required button text 
+                  "url": "https://youtu.be/TWVNdiPv54k", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "1:07", // optional - completion time
+                  "tags": ['confidence intervals', 'minimum sample size', 'population proportion']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -1445,97 +1520,87 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.3 Hypothesis Tests: Means", //required topic title
           "objectives": [
             {
-              "title": "4.3a Calculating the Test Statistic", //optional objective title
+              "title": "4.3a-c Test Statistics, P-values, and Conclusions", //optional objective title
               "links": [
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Introduction to the t Distribution", //required button text 
+                  "url": "https://www.youtube.com/watch?v=Uv6nGIgZMVw", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "8:54", // optional - completion time
+                  "tags": ['hypothesis testing', 'mean', 't distribution']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Student t Distribution in Statistics", //required button text 
+                  "url": "http://www.statisticshowto.com/what-is-a-t-distribution/", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['hypothesis testing', 'mean', 't distribution']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "t Tests for One Mean: An Example", //required button text 
+                  "url": "https://youtu.be/kQ4xcx6N0o4", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "9:42", // optional - completion time
+                  "tags": ['hypothesis testing', 'mean']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Statdisk to Test a Claim About the Mean", //required button text 
+                  "url": "https://youtu.be/TDEvl9IloCY", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "3:38", // optional - completion time
+                  "tags": ['hypothesis testing', 'mean']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.3b Using P-values", //optional objective title
-              "links": [
-                {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.3c Finding the Conclusion", //optional objective title
-              "links": [
-                {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
-                  "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            } // end of an objective - add a comma here to add anohter objective
           ] // end of objectives array
         }, // end of topic object - add a comma here to add another topic
                 {
           "title": "4.4 Hypothesis Tests: Standard Deviations", //required topic title
           "objectives": [
             {
-              "title": "4.4a Calculating the Test Statistic", //optional objective title
+              "title": "4.4a-c Test Statistics, P-values, and Conclusions", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
+                  "text": "Facts About the Chi-Square Distribution", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:jyBhGTuv@5/Facts-About-the-Chi-Square-Dis", //required
                   "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.4b Using P-values", //optional objective title
-              "links": [
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['hypothesis testing', 'standard deviation', 'chi-square distribution']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
+                  "text": "Using Statdisk for Testing Claims About Standard Deviation", //required button text 
+                  "url": "https://youtu.be/BuyE1zhd4Ig", //required
                   "type": type[0], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.4c Finding the Conclusion", //optional objective title
-              "links": [
+                  "time": "3:19", // optional - completion time
+                  "tags": ['hypothesis testing', 'standard deviation', 'statdisk']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
+                  "text": "Using Statdisk for Testing Claims About Standard Deviation", //required button text 
+                  "url": "https://youtu.be/1UbV99cetF4", //required
                   "type": type[0], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "16:32", // optional - completion time
+                  "tags": ['hypothesis testing', 'standard deviation']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
@@ -1548,44 +1613,59 @@ app.controller("myCtrl", function ($scope) {
               "title": "4.5a Scatterplots of Ordered Pairs", //optional objective title
               "links": [
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Constructing a Scatterplot", //required button text 
+                  "url": "https://youtu.be/sHbX58y5D4U", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "2:32", // optional - completion time
+                  "tags": ['khan academy', 'scatterplots']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Scatterplots: Shoe Size and Test Scores", //required button text 
+                  "url": "https://youtu.be/Jpbm5YgciqI", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "2:25", // optional - completion time
+                  "tags": ['khan academy', 'scatterplots']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
-              "title": "4.5b Linear Correlation", //optional objective title
+              "title": "4.5b-c Linear Correlation and Regression", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.5c Linear Regression", //optional objective title
-              "links": [
+                  "text": "Testing the Significance of the Correlation Coefficient", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:DVUc4Pk0@3/Testing-the-Significance-of-th", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['correlation', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "The Regression Equation", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:_WBoD9u3@3/The-Regression-Equation", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['regression', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Statdisk to Determine Correlation and Regression", //required button text 
+                  "url": "https://youtu.be/GnoqFFOKwRQ", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "2:56", // optional - completion time
+                  "tags": ['correlation', 'regression', 'statdisk']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -1595,13 +1675,13 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
+                  "text": "Prediction", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:tXQ74SKP@3/Prediction", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['correlation', 'regression', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
           ] // end of objectives array
@@ -1610,32 +1690,27 @@ app.controller("myCtrl", function ($scope) {
           "title": "4.6 Goodness of Fit", //required topic title
           "objectives": [
             {
-              "title": "4.6a Goodness of Fit with Equal Expected Values", //optional objective title
+              "title": "4.6a-b Goodness of Fit", //optional objective title
               "links": [
                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
-                  "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
-                } // end of link object - add a comma to add another link
-              ] // end of links array            
-            }, // end of an objective - add a comma here to add anohter objective
-            {
-              "title": "4.6b Goodness of Fit with Unequal Expected Values", //optional objective title
-              "links": [
+                  "text": "Goodness of Fit Test", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:0kBuhjul@5/Goodness-of-Fit-Test", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['goodness of fit', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
                 {
-                  "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Using Statdisk for Testing Goodness of Fit", //required button text 
+                  "url": "https://youtu.be/wS-YGwewkC8", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "", // optional - completion time
+                  "tags": ['goodness of fit', 'statdisk']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array            
             } // end of an objective - add a comma here to add anohter objective
@@ -1643,19 +1718,29 @@ app.controller("myCtrl", function ($scope) {
         }, // end of topic object - add a comma here to add another topic
         {
           "title": "4.7 Test for Independence", //required topic title
-          "objectives": [
+            "objectives": [
             {
-              "title": "4.7a Independence and Contingency Tables", //optional objective title
+              "title": "4.7a Independences and Contingency Tables", //optional objective title
               "links": [
-                {
+                 {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Something about distribution", //required button text 
-                  "url": "https://yahoo.com", //required
-                  "type": type[0], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Test of Independence", //required button text 
+                  "url": "https://cnx.org/contents/MBiUQmmY@18.54:OPnvi2o4@6/Test-of-Independence", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[1], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['independence', 'openstax']//optional tags
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Using Statdisk for Contingency Tables", //required button text 
+                  "url": "https://youtu.be/-Y03KhvHsQw", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "10:30", // optional - completion time
-                  "tags": ['khan academy', 'z-values']//optional tags
+                  "time": "", // optional - completion time
+                  "tags": ['independence', 'statdisk']//optional tags
                 } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
