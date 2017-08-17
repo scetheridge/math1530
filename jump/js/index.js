@@ -853,7 +853,7 @@ app.controller("myCtrl", function ($scope) {
                   "url": "https://psccmath.github.io/math1530/apps/binomialcalc.html", //required
                   "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[3], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "7:49", // optional - completion time
+                  "time": "", // optional - completion time
                   "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable', 'calculator']//optional tags
                } // end of link object - add a comma to add another link
               ] // end of links array
@@ -964,7 +964,7 @@ app.controller("myCtrl", function ($scope) {
                   "url": "https://psccmath.github.io/math1530/apps/normalcalc.html", //required
                   "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[3], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "7:49", // optional - completion time
+                  "time": "", // optional - completion time
                   "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
                } // end of link object - add a comma to add another link
               ] // end of links array
