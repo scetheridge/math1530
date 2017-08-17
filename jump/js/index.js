@@ -845,6 +845,16 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "7:49", // optional - completion time
                   "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable']//optional tags
+               }, // end of link object - add a comma to add another link
+               {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Binomial Probability Distribution Calculator", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/binomialcalc.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:49", // optional - completion time
+                  "tags": ['binomial probability distribution', 'probability distribution', 'discrete random variable', 'calculator']//optional tags
                } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
@@ -946,7 +956,17 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "", // optional - completion time
                   "tags": ['standard normal distribution', 'z-score', 'video']//optional tags
-                } // end of link object - add a comma to add another link
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Normal Probability Distribution Calculator", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/normalcalc.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:49", // optional - completion time
+                  "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
+               } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
@@ -1005,13 +1025,13 @@ app.controller("myCtrl", function ($scope) {
                 {
                   "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
-                  "text": "Standard Normal Distribution Calculator", //required 
-                  "url": "https://bellecurve.github.io/math1530/apps/", //required
-                  "type": type[2], // required - refers to array above - first value is type[0] - no quotes
+                  "text": "Normal Probability Distribution Calculator", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/normalcalc.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[3], // required - refers to array above - first value is media[0] - no quotes
                   "time": "", // optional - completion time
-                  "tags": ['standard normal distribution', 'z-score', 'calculator']//optional tags
-                } // end of link object - add a comma to add another link
+                  "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
+               } // end of link object - add a comma to add another link
               ] // end of links array
             }, // end of an objective - add a comma here to add anohter objective
             {
@@ -1288,6 +1308,16 @@ app.controller("myCtrl", function ($scope) {
                   "tags": ['confidence intervals', 'population mean', 'webpage']//optional tags
                 }, // end of link object - add a comma to add another link
                 {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Normal Distribution Calculator", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/normalcalc.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
+               }, // end of link object - add a comma to add another link
+                {
                   "icon": icon[1], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
                   "text": "A Single Population Mean using the Student t-Distribution", //required button text 
@@ -1297,6 +1327,16 @@ app.controller("myCtrl", function ($scope) {
                   "time": "", // optional - completion time
                   "tags": ['confidence intervals', 'population mean', 'webpage']//optional tags
                 }, // end of link object - add a comma to add another link
+                 {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Student-t Distribution Calculator", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/tdistribution.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:49", // optional - completion time
+                  "tags": ['student t distribution', 'probability distribution', 'calculator']//optional tags
+               }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[0], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
@@ -1307,6 +1347,16 @@ app.controller("myCtrl", function ($scope) {
                   "time": "", // optional - completion time
                   "tags": ['confidence intervals', 'population mean', 'webpage']//optional tags
                 }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Confidence Interval: Estimating a Population Parameter", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/confidenceint.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "", // optional - completion time
+                  "tags": ['student t distribution', 'probability distribution', 'calculator']//optional tags
+               }, // end of link object - add a comma to add another link
                 {
                   "icon": icon[2], // required - refers to array above - first value is icon[0] - no quotes
                   "class": "", //required but can be blank - for extra css styling
@@ -1411,7 +1461,17 @@ app.controller("myCtrl", function ($scope) {
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
                   "time": "", // optional - completion time
                   "tags": ['openstax', 'hypothesis testing', 'null hypothesis', 'alternative hypothesis']//optional tags
-                } // end of link object - add a comma to add another link
+                }, // end of link object - add a comma to add another link
+                {
+                  "icon": icon[4], // required - refers to array above - first value is icon[0] - no quotes
+                  "class": "", //required but can be blank - for extra css styling
+                  "text": "Testing a Claim About a Population Parameter", //required button text 
+                  "url": "https://psccmath.github.io/math1530/apps/hyptests.html", //required
+                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "media": media[3], // required - refers to array above - first value is media[0] - no quotes
+                  "time": "7:49", // optional - completion time
+                  "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
+               } // end of link object - add a comma to add another link
               ] // end of links array
             } // end of an objective - add a comma here to add anohter objective
           ] // end of objectives array
