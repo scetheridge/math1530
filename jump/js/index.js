@@ -1459,7 +1459,7 @@ app.controller("myCtrl", function ($scope) {
                   "url": "https://youtu.be/R2hxisYFKxM", //required
                   "type": type[1], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[0], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "", // optional - completion time
+                  "time": "7:49", // optional - completion time
                   "tags": ['openstax', 'hypothesis testing', 'null hypothesis', 'alternative hypothesis']//optional tags
                 }, // end of link object - add a comma to add another link
                 {
@@ -1467,9 +1467,9 @@ app.controller("myCtrl", function ($scope) {
                   "class": "", //required but can be blank - for extra css styling
                   "text": "Testing a Claim About a Population Parameter", //required button text 
                   "url": "https://psccmath.github.io/math1530/apps/hyptests.html", //required
-                  "type": type[1], // required - refers to array above - first value is type[0] - no quotes
+                  "type": type[3], // required - refers to array above - first value is type[0] - no quotes
                   "media": media[3], // required - refers to array above - first value is media[0] - no quotes
-                  "time": "7:49", // optional - completion time
+                  "time": "", // optional - completion time
                   "tags": ['normal probability distribution', 'probability distribution', 'calculator']//optional tags
                } // end of link object - add a comma to add another link
               ] // end of links array
