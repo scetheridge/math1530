@@ -1,0 +1,160 @@
+.solution{
+    list-style-type: none;
+}
+ol li ol{
+    
+    list-style-type:lower-alpha;
+    
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+html {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       
+    }
+
+    .solution {
+        color: #b30000 !important;
+    }
+
+    html{
+        font-family: -apple-system, Lato, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    div.banner {
+        background-color: #314A84;
+        padding: .5em;
+        padding-left: 1em;
+        color: white;
+    }
+
+    div.container {
+        padding: .5em 1em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 0.9em;
+    }
+
+    p {
+        line-height: 1.8em;
+    }
+
+    main ul li {
+        list-style-type: disc;
+    }
+
+    li {
+        line-height: 1.6em;
+        margin-left: 1.2em;
+    }
+
+    li ul li,
+    li ol li {
+        margin-left: 1.2em;
+    }
+    table,
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table th {
+  background-color: rgba(219, 219, 219, 0.2);
+}
+table th,
+table td {
+  padding: 8px;
+}
+    td.bleft{
+        border-left: 1px solid black;
+      }
+      table.center{
+        text-align: center;
+      }
+      tr.dashed td{
+          border-bottom: 1px dashed black;
+        
+      }
+      tr.solid td{
+          border-bottom: 1px solid black;
+      }
+      td.bright{
+        border-right: 1px solid black;
+      }
+      td.highlight, tr.highlight{
+        background-color: #E7E9FF;
+      }
+      img{
+          /* display: block; */
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 70%;
+      }
+      img.resize {
+        max-width:100%;
+        max-height:100%;
+      }
+
+    /* @media only screen and (min-width: 775px) {
+        html {
+        }
+        div.container {
+            padding: 1em 7em;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.7em;
+        }
+        h4 {
+            font-size: 1.2em;
+        }
+        p {
+            line-height: 2.8em;
+        }
+        li {
+            line-height: 1.6em;
+            margin-left: 2em;
+        }
+        li ul li,
+        li ol li {
+            margin-left: 2.2em;
+        }
+    } */
