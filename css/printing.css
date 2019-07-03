@@ -1,0 +1,26 @@
+
+@media print {
+    
+html{
+  font-size: 22px;
+}
+/* div.container {
+    padding-right: .8in;
+} */
+.problem{
+    page-break-inside: avoid;
+}
+.solution {
+    color: #b30000 !important;
+}
+  .solution, .answer, nav{
+      visibility: hidden;
+  }
+  /* .unit, .section{
+      page-break-after: always;
+  } */
+  /* li {
+    line-height: 1.6em;
+    margin-left: .75em;
+} */
+}
